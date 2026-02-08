@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import Response, StreamingResponse
 from pydantic import BaseModel, Field
 
 from agents import (
@@ -438,6 +438,11 @@ async def health() -> Dict[str, Any]:
         "routes": len(world.get("routes", [])),
         "active_simulations": len(app.state.simulations),
     }
+
+
+@app.api_route("/head", methods=["HEAD", "GET"])
+async def head() -> Response:
+    return Response(status_code=200)
 
 
 @app.get("/schemas")
