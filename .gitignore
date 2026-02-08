@@ -30,6 +30,3 @@ Thumbs.db
 
 # Logs
 *.log
-
-# Data files
-world_data.json

@@ -1,0 +1,1365 @@
+{
+  "buyer_locations": {
+    "united states": {"lat": 38.9072, "lng": -77.0369, "country": "US", "default_port": "New York-New Jersey"},
+    "usa": {"lat": 38.9072, "lng": -77.0369, "country": "US", "default_port": "New York-New Jersey"},
+    "new york": {"lat": 40.7128, "lng": -74.006, "country": "US", "default_port": "New York-New Jersey"},
+    "los angeles": {"lat": 33.9425, "lng": -118.408, "country": "US", "default_port": "Long Beach"},
+    "chicago": {"lat": 41.8781, "lng": -87.6298, "country": "US", "default_port": "New York-New Jersey"},
+    "houston": {"lat": 29.7604, "lng": -95.3698, "country": "US", "default_port": "Houston"},
+    "miami": {"lat": 25.7617, "lng": -80.1918, "country": "US", "default_port": "Savannah"},
+    "san francisco": {"lat": 37.7749, "lng": -122.4194, "country": "US", "default_port": "Long Beach"},
+    "seattle": {"lat": 47.6062, "lng": -122.3321, "country": "US", "default_port": "Seattle"},
+    "detroit": {"lat": 42.3314, "lng": -83.0458, "country": "US", "default_port": "New York-New Jersey"},
+    "germany": {"lat": 52.52, "lng": 13.405, "country": "DE", "default_port": "Hamburg"},
+    "berlin": {"lat": 52.52, "lng": 13.405, "country": "DE", "default_port": "Hamburg"},
+    "munich": {"lat": 48.1351, "lng": 11.582, "country": "DE", "default_port": "Hamburg"},
+    "stuttgart": {"lat": 48.7758, "lng": 9.1829, "country": "DE", "default_port": "Hamburg"},
+    "japan": {"lat": 35.6762, "lng": 139.6503, "country": "JP", "default_port": "Yokohama"},
+    "tokyo": {"lat": 35.6762, "lng": 139.6503, "country": "JP", "default_port": "Yokohama"},
+    "osaka": {"lat": 34.6937, "lng": 135.5023, "country": "JP", "default_port": "Kobe"},
+    "united kingdom": {"lat": 51.5074, "lng": -0.1278, "country": "GB", "default_port": "Felixstowe"},
+    "london": {"lat": 51.5074, "lng": -0.1278, "country": "GB", "default_port": "Felixstowe"},
+    "france": {"lat": 48.8566, "lng": 2.3522, "country": "FR", "default_port": "Rotterdam"},
+    "paris": {"lat": 48.8566, "lng": 2.3522, "country": "FR", "default_port": "Rotterdam"},
+    "china": {"lat": 39.9042, "lng": 116.4074, "country": "CN", "default_port": "Shanghai"},
+    "beijing": {"lat": 39.9042, "lng": 116.4074, "country": "CN", "default_port": "Tianjin"},
+    "shanghai": {"lat": 31.2304, "lng": 121.4737, "country": "CN", "default_port": "Shanghai"},
+    "south korea": {"lat": 37.5665, "lng": 126.978, "country": "KR", "default_port": "Busan"},
+    "seoul": {"lat": 37.5665, "lng": 126.978, "country": "KR", "default_port": "Busan"},
+    "india": {"lat": 28.6139, "lng": 77.209, "country": "IN", "default_port": "Mumbai JNPT"},
+    "mumbai": {"lat": 19.076, "lng": 72.8777, "country": "IN", "default_port": "Mumbai JNPT"},
+    "brazil": {"lat": -23.5505, "lng": -46.6333, "country": "BR", "default_port": "Santos"},
+    "sao paulo": {"lat": -23.5505, "lng": -46.6333, "country": "BR", "default_port": "Santos"},
+    "mexico": {"lat": 19.4326, "lng": -99.1332, "country": "MX", "default_port": "Manzanillo"},
+    "mexico city": {"lat": 19.4326, "lng": -99.1332, "country": "MX", "default_port": "Veracruz"},
+    "monterrey": {"lat": 25.6866, "lng": -100.3161, "country": "MX", "default_port": "Manzanillo"},
+    "australia": {"lat": -33.8688, "lng": 151.2093, "country": "AU", "default_port": "Sydney"},
+    "sydney": {"lat": -33.8688, "lng": 151.2093, "country": "AU", "default_port": "Sydney"},
+    "melbourne": {"lat": -37.8136, "lng": 144.9631, "country": "AU", "default_port": "Melbourne"},
+    "canada": {"lat": 43.6532, "lng": -79.3832, "country": "CA", "default_port": "Montreal"},
+    "toronto": {"lat": 43.6532, "lng": -79.3832, "country": "CA", "default_port": "Montreal"},
+    "vancouver": {"lat": 49.2827, "lng": -123.1207, "country": "CA", "default_port": "Vancouver"},
+    "singapore": {"lat": 1.3521, "lng": 103.8198, "country": "SG", "default_port": "Singapore"},
+    "dubai": {"lat": 25.2048, "lng": 55.2708, "country": "AE", "default_port": "Jebel Ali"},
+    "taiwan": {"lat": 25.033, "lng": 121.5654, "country": "TW", "default_port": "Kaohsiung"},
+    "colombia": {"lat": 4.711, "lng": -74.0721, "country": "CO", "default_port": "Santos"},
+    "spain": {"lat": 40.4168, "lng": -3.7038, "country": "ES", "default_port": "Rotterdam"},
+    "italy": {"lat": 41.9028, "lng": 12.4964, "country": "IT", "default_port": "Rotterdam"},
+    "netherlands": {"lat": 52.3676, "lng": 4.9041, "country": "NL", "default_port": "Rotterdam"},
+    "saudi arabia": {"lat": 24.7136, "lng": 46.6753, "country": "SA", "default_port": "Jeddah"},
+    "south africa": {"lat": -26.2041, "lng": 28.0473, "country": "ZA", "default_port": "Durban"},
+    "turkey": {"lat": 41.0082, "lng": 28.9784, "country": "TR", "default_port": "Istanbul Ambarli"},
+    "vietnam": {"lat": 10.8231, "lng": 106.6297, "country": "VN", "default_port": "Ho Chi Minh City"},
+    "thailand": {"lat": 13.7563, "lng": 100.5018, "country": "TH", "default_port": "Laem Chabang"},
+    "indonesia": {"lat": -6.2088, "lng": 106.8456, "country": "ID", "default_port": "Tanjung Priok"},
+    "malaysia": {"lat": 3.139, "lng": 101.6869, "country": "MY", "default_port": "Port Klang"},
+    "chile": {"lat": -33.4489, "lng": -70.6693, "country": "CL", "default_port": "San Antonio"},
+    "philippines": {"lat": 14.5995, "lng": 120.9842, "country": "PH", "default_port": "Manila"},
+    "manila": {"lat": 14.5995, "lng": 120.9842, "country": "PH", "default_port": "Manila"},
+    "poland": {"lat": 52.2297, "lng": 21.0122, "country": "PL", "default_port": "Gdansk"},
+    "warsaw": {"lat": 52.2297, "lng": 21.0122, "country": "PL", "default_port": "Gdansk"},
+    "egypt": {"lat": 30.0444, "lng": 31.2357, "country": "EG", "default_port": "Port Said"},
+    "cairo": {"lat": 30.0444, "lng": 31.2357, "country": "EG", "default_port": "Port Said"},
+    "argentina": {"lat": -34.6037, "lng": -58.3816, "country": "AR", "default_port": "Buenos Aires"},
+    "buenos aires": {"lat": -34.6037, "lng": -58.3816, "country": "AR", "default_port": "Buenos Aires"},
+    "nigeria": {"lat": 6.5244, "lng": 3.3792, "country": "NG", "default_port": "Lagos Apapa"},
+    "lagos": {"lat": 6.5244, "lng": 3.3792, "country": "NG", "default_port": "Lagos Apapa"},
+    "peru": {"lat": -12.0464, "lng": -77.0428, "country": "PE", "default_port": "Callao"},
+    "lima": {"lat": -12.0464, "lng": -77.0428, "country": "PE", "default_port": "Callao"},
+    "bangladesh": {"lat": 23.8103, "lng": 90.4125, "country": "BD", "default_port": "Chittagong"},
+    "dhaka": {"lat": 23.8103, "lng": 90.4125, "country": "BD", "default_port": "Chittagong"},
+    "finland": {"lat": 60.1699, "lng": 24.9384, "country": "FI", "default_port": "Helsinki"},
+    "helsinki": {"lat": 60.1699, "lng": 24.9384, "country": "FI", "default_port": "Helsinki"},
+    "norway": {"lat": 59.9139, "lng": 10.7522, "country": "NO", "default_port": "Bergen"},
+    "oslo": {"lat": 59.9139, "lng": 10.7522, "country": "NO", "default_port": "Bergen"}
+  },
+
+  "countries": [
+    {
+      "code": "US", "name": "United States", "currency": "USD",
+      "ports": [
+        {"name": "Los Angeles", "lat": 33.7405, "lng": -118.2608},
+        {"name": "Long Beach", "lat": 33.7701, "lng": -118.1937},
+        {"name": "New York-New Jersey", "lat": 40.684, "lng": -74.149},
+        {"name": "Savannah", "lat": 32.0835, "lng": -81.0998},
+        {"name": "Houston", "lat": 29.7311, "lng": -95.0152},
+        {"name": "Seattle", "lat": 47.579, "lng": -122.349}
+      ]
+    },
+    {
+      "code": "CN", "name": "China", "currency": "CNY",
+      "ports": [
+        {"name": "Shanghai", "lat": 31.2304, "lng": 121.4737},
+        {"name": "Shenzhen", "lat": 22.5431, "lng": 114.0579},
+        {"name": "Ningbo", "lat": 29.8683, "lng": 121.544},
+        {"name": "Qingdao", "lat": 36.0671, "lng": 120.3826},
+        {"name": "Tianjin", "lat": 38.9165, "lng": 117.5865},
+        {"name": "Guangzhou", "lat": 23.0844, "lng": 113.578}
+      ]
+    },
+    {
+      "code": "JP", "name": "Japan", "currency": "JPY",
+      "ports": [
+        {"name": "Yokohama", "lat": 35.4437, "lng": 139.638},
+        {"name": "Kobe", "lat": 34.6901, "lng": 135.196},
+        {"name": "Nagoya", "lat": 35.0849, "lng": 136.882}
+      ]
+    },
+    {
+      "code": "KR", "name": "South Korea", "currency": "KRW",
+      "ports": [
+        {"name": "Busan", "lat": 35.1796, "lng": 129.0756},
+        {"name": "Incheon", "lat": 37.4538, "lng": 126.633}
+      ]
+    },
+    {
+      "code": "TW", "name": "Taiwan", "currency": "TWD",
+      "ports": [
+        {"name": "Kaohsiung", "lat": 22.6273, "lng": 120.3014},
+        {"name": "Keelung", "lat": 25.1326, "lng": 121.7423}
+      ]
+    },
+    {
+      "code": "DE", "name": "Germany", "currency": "EUR",
+      "ports": [
+        {"name": "Hamburg", "lat": 53.5511, "lng": 9.9937},
+        {"name": "Bremerhaven", "lat": 53.5396, "lng": 8.5809}
+      ]
+    },
+    {
+      "code": "IN", "name": "India", "currency": "INR",
+      "ports": [
+        {"name": "Mumbai JNPT", "lat": 18.9512, "lng": 72.9493},
+        {"name": "Chennai", "lat": 13.0827, "lng": 80.2707},
+        {"name": "Mundra", "lat": 22.8391, "lng": 69.7254}
+      ]
+    },
+    {
+      "code": "AU", "name": "Australia", "currency": "AUD",
+      "ports": [
+        {"name": "Melbourne", "lat": -37.8203, "lng": 144.9396},
+        {"name": "Sydney", "lat": -33.8572, "lng": 151.2093},
+        {"name": "Fremantle", "lat": -32.0569, "lng": 115.7439}
+      ]
+    },
+    {
+      "code": "CL", "name": "Chile", "currency": "CLP",
+      "ports": [
+        {"name": "San Antonio", "lat": -33.5933, "lng": -71.6067},
+        {"name": "Valparaiso", "lat": -33.0472, "lng": -71.6127}
+      ]
+    },
+    {
+      "code": "CD", "name": "DR Congo", "currency": "CDF",
+      "ports": [
+        {"name": "Matadi", "lat": -5.82, "lng": 13.45}
+      ]
+    },
+    {
+      "code": "ID", "name": "Indonesia", "currency": "IDR",
+      "ports": [
+        {"name": "Tanjung Priok", "lat": -6.1064, "lng": 106.88},
+        {"name": "Surabaya", "lat": -7.2496, "lng": 112.7477}
+      ]
+    },
+    {
+      "code": "BR", "name": "Brazil", "currency": "BRL",
+      "ports": [
+        {"name": "Santos", "lat": -23.9608, "lng": -46.3332},
+        {"name": "Paranagua", "lat": -25.5163, "lng": -48.5103}
+      ]
+    },
+    {
+      "code": "VN", "name": "Vietnam", "currency": "VND",
+      "ports": [
+        {"name": "Ho Chi Minh City", "lat": 10.8231, "lng": 106.6297},
+        {"name": "Hai Phong", "lat": 20.8648, "lng": 106.6831}
+      ]
+    },
+    {
+      "code": "MY", "name": "Malaysia", "currency": "MYR",
+      "ports": [
+        {"name": "Port Klang", "lat": 3.0017, "lng": 101.3928},
+        {"name": "Tanjung Pelepas", "lat": 1.363, "lng": 103.5505}
+      ]
+    },
+    {
+      "code": "TH", "name": "Thailand", "currency": "THB",
+      "ports": [
+        {"name": "Laem Chabang", "lat": 13.0739, "lng": 100.8924}
+      ]
+    },
+    {
+      "code": "MX", "name": "Mexico", "currency": "MXN",
+      "ports": [
+        {"name": "Manzanillo", "lat": 19.05, "lng": -104.3167},
+        {"name": "Lazaro Cardenas", "lat": 17.958, "lng": -102.183},
+        {"name": "Veracruz", "lat": 19.1738, "lng": -96.1342}
+      ]
+    },
+    {
+      "code": "SA", "name": "Saudi Arabia", "currency": "SAR",
+      "ports": [
+        {"name": "Jeddah", "lat": 21.4858, "lng": 39.1925},
+        {"name": "Dammam", "lat": 26.4267, "lng": 50.0888}
+      ]
+    },
+    {
+      "code": "ZA", "name": "South Africa", "currency": "ZAR",
+      "ports": [
+        {"name": "Durban", "lat": -29.8587, "lng": 31.0218},
+        {"name": "Cape Town", "lat": -33.9215, "lng": 18.4239}
+      ]
+    },
+    {
+      "code": "CA", "name": "Canada", "currency": "CAD",
+      "ports": [
+        {"name": "Vancouver", "lat": 49.2865, "lng": -123.113},
+        {"name": "Montreal", "lat": 45.5048, "lng": -73.5538}
+      ]
+    },
+    {
+      "code": "TR", "name": "Turkey", "currency": "TRY",
+      "ports": [
+        {"name": "Istanbul Ambarli", "lat": 41.0049, "lng": 28.6821},
+        {"name": "Mersin", "lat": 36.7998, "lng": 34.6331}
+      ]
+    },
+    {
+      "code": "GB", "name": "United Kingdom", "currency": "GBP",
+      "ports": [
+        {"name": "Felixstowe", "lat": 51.9615, "lng": 1.351},
+        {"name": "Southampton", "lat": 50.8989, "lng": -1.3957}
+      ]
+    },
+    {
+      "code": "NL", "name": "Netherlands", "currency": "EUR",
+      "ports": [
+        {"name": "Rotterdam", "lat": 51.9035, "lng": 4.4816}
+      ]
+    },
+    {
+      "code": "SG", "name": "Singapore", "currency": "SGD",
+      "ports": [
+        {"name": "Singapore", "lat": 1.2644, "lng": 103.8222}
+      ]
+    },
+    {
+      "code": "AE", "name": "United Arab Emirates", "currency": "AED",
+      "ports": [
+        {"name": "Jebel Ali", "lat": 25.0089, "lng": 55.058}
+      ]
+    },
+    {
+      "code": "PH", "name": "Philippines", "currency": "PHP",
+      "ports": [
+        {"name": "Manila", "lat": 14.5176, "lng": 120.9822}
+      ]
+    },
+    {
+      "code": "PL", "name": "Poland", "currency": "PLN",
+      "ports": [
+        {"name": "Gdansk", "lat": 54.3958, "lng": 18.6603}
+      ]
+    },
+    {
+      "code": "EG", "name": "Egypt", "currency": "EGP",
+      "ports": [
+        {"name": "Port Said", "lat": 31.2653, "lng": 32.3019}
+      ]
+    },
+    {
+      "code": "AR", "name": "Argentina", "currency": "ARS",
+      "ports": [
+        {"name": "Buenos Aires", "lat": -34.5795, "lng": -58.3727}
+      ]
+    },
+    {
+      "code": "NG", "name": "Nigeria", "currency": "NGN",
+      "ports": [
+        {"name": "Lagos Apapa", "lat": 6.4414, "lng": 3.3781}
+      ]
+    },
+    {
+      "code": "PE", "name": "Peru", "currency": "PEN",
+      "ports": [
+        {"name": "Callao", "lat": -12.0547, "lng": -77.1278}
+      ]
+    },
+    {
+      "code": "BD", "name": "Bangladesh", "currency": "BDT",
+      "ports": [
+        {"name": "Chittagong", "lat": 22.3384, "lng": 91.8317}
+      ]
+    },
+    {
+      "code": "FI", "name": "Finland", "currency": "EUR",
+      "ports": [
+        {"name": "Helsinki", "lat": 60.1551, "lng": 24.9208}
+      ]
+    },
+    {
+      "code": "NO", "name": "Norway", "currency": "NOK",
+      "ports": [
+        {"name": "Bergen", "lat": 60.3913, "lng": 5.3221}
+      ]
+    }
+  ],
+
+  "materials": [
+    {"id": "steel-hrcoil", "name": "Hot-Rolled Steel Coil", "category": "metals", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 30},
+    {"id": "steel-crcoil", "name": "Cold-Rolled Steel Coil", "category": "metals", "unit": "metric_ton", "base_price_index": 120, "lead_time_days": 35},
+    {"id": "aluminum-alloy", "name": "Aluminum Alloy 6061/7075", "category": "metals", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 25},
+    {"id": "copper-cathode", "name": "Copper Cathode (LME Grade A)", "category": "metals", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 20},
+    {"id": "lithium-carbonate", "name": "Lithium Carbonate (Battery Grade)", "category": "battery", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 40},
+    {"id": "cobalt-sulfate", "name": "Cobalt Sulfate (Battery Grade)", "category": "battery", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 45},
+    {"id": "nickel-sulfate", "name": "Nickel Sulfate (Battery Grade)", "category": "battery", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 35},
+    {"id": "graphite-anode", "name": "Graphite Anode Material", "category": "battery", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 30},
+    {"id": "silicon-wafer", "name": "Silicon Wafer (Semiconductor)", "category": "electronics", "unit": "unit", "base_price_index": 100, "lead_time_days": 60},
+    {"id": "silicon-poly", "name": "Polysilicon (Solar Grade)", "category": "solar", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 45},
+    {"id": "rare-earth-ndfeb", "name": "Neodymium-Iron-Boron Magnets", "category": "magnets", "unit": "kg", "base_price_index": 100, "lead_time_days": 50},
+    {"id": "natural-rubber", "name": "Natural Rubber (TSR 20)", "category": "polymers", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 20},
+    {"id": "plastic-abs", "name": "ABS Plastic Resin", "category": "polymers", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 15},
+    {"id": "plastic-pp", "name": "Polypropylene Resin", "category": "polymers", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 15},
+    {"id": "specialty-glass", "name": "Specialty Aluminosilicate Glass", "category": "glass", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 30},
+    {"id": "carbon-fiber", "name": "Carbon Fiber Composite (T700)", "category": "advanced", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 45},
+    {"id": "titanium-alloy", "name": "Titanium Alloy (Grade 5 Ti-6Al-4V)", "category": "metals", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 50},
+    {"id": "cotton-raw", "name": "Raw Cotton (Middling Grade)", "category": "textiles", "unit": "metric_ton", "base_price_index": 100, "lead_time_days": 15}
+  ],
+
+  "products": [
+    {
+      "id": "prod-ev-battery",
+      "name": "Electric Vehicle Battery Pack",
+      "category": "automotive",
+      "preferred_manufacturer_id": "mfg-us-01",
+      "bom": [
+        {"material": "lithium-carbonate", "qty": 50},
+        {"material": "cobalt-sulfate", "qty": 15},
+        {"material": "nickel-sulfate", "qty": 30},
+        {"material": "graphite-anode", "qty": 45},
+        {"material": "aluminum-alloy", "qty": 20}
+      ]
+    },
+    {
+      "id": "prod-smartphone",
+      "name": "Smartphone",
+      "category": "electronics",
+      "preferred_manufacturer_id": "mfg-jp-01",
+      "bom": [
+        {"material": "silicon-wafer", "qty": 50},
+        {"material": "specialty-glass", "qty": 2},
+        {"material": "aluminum-alloy", "qty": 1},
+        {"material": "rare-earth-ndfeb", "qty": 5},
+        {"material": "copper-cathode", "qty": 1},
+        {"material": "plastic-abs", "qty": 1}
+      ]
+    },
+    {
+      "id": "prod-solar-panel",
+      "name": "Solar Panel Array",
+      "category": "energy",
+      "preferred_manufacturer_id": "mfg-cn-01",
+      "bom": [
+        {"material": "silicon-poly", "qty": 200},
+        {"material": "aluminum-alloy", "qty": 300},
+        {"material": "specialty-glass", "qty": 150},
+        {"material": "copper-cathode", "qty": 80}
+      ]
+    },
+    {
+      "id": "prod-wind-turbine",
+      "name": "Wind Turbine Nacelle",
+      "category": "energy",
+      "preferred_manufacturer_id": "mfg-de-01",
+      "bom": [
+        {"material": "steel-hrcoil", "qty": 8000},
+        {"material": "carbon-fiber", "qty": 500},
+        {"material": "rare-earth-ndfeb", "qty": 200},
+        {"material": "copper-cathode", "qty": 1500}
+      ]
+    },
+    {
+      "id": "prod-auto-engine",
+      "name": "Automotive Engine Assembly",
+      "category": "automotive",
+      "preferred_manufacturer_id": "mfg-de-01",
+      "bom": [
+        {"material": "steel-crcoil", "qty": 5000},
+        {"material": "aluminum-alloy", "qty": 2000},
+        {"material": "titanium-alloy", "qty": 200},
+        {"material": "natural-rubber", "qty": 500},
+        {"material": "copper-cathode", "qty": 300}
+      ]
+    },
+    {
+      "id": "prod-laptop",
+      "name": "Laptop Computer",
+      "category": "electronics",
+      "preferred_manufacturer_id": "mfg-us-01",
+      "bom": [
+        {"material": "silicon-wafer", "qty": 100},
+        {"material": "aluminum-alloy", "qty": 2},
+        {"material": "lithium-carbonate", "qty": 5},
+        {"material": "specialty-glass", "qty": 2},
+        {"material": "plastic-abs", "qty": 1},
+        {"material": "copper-cathode", "qty": 1}
+      ]
+    },
+    {
+      "id": "prod-mri-scanner",
+      "name": "MRI Scanner",
+      "category": "medical",
+      "preferred_manufacturer_id": "mfg-jp-01",
+      "bom": [
+        {"material": "rare-earth-ndfeb", "qty": 50},
+        {"material": "copper-cathode", "qty": 200},
+        {"material": "titanium-alloy", "qty": 100},
+        {"material": "silicon-wafer", "qty": 5},
+        {"material": "plastic-abs", "qty": 30}
+      ]
+    },
+    {
+      "id": "prod-clothing",
+      "name": "Premium Clothing Line",
+      "category": "textiles",
+      "preferred_manufacturer_id": "mfg-in-01",
+      "bom": [
+        {"material": "cotton-raw", "qty": 2000},
+        {"material": "plastic-pp", "qty": 100},
+        {"material": "natural-rubber", "qty": 50}
+      ]
+    },
+    {
+      "id": "prod-ev-motor",
+      "name": "Electric Vehicle Motor",
+      "category": "automotive",
+      "preferred_manufacturer_id": "mfg-de-01",
+      "bom": [
+        {"material": "rare-earth-ndfeb", "qty": 100},
+        {"material": "copper-cathode", "qty": 500},
+        {"material": "steel-crcoil", "qty": 2000},
+        {"material": "aluminum-alloy", "qty": 800}
+      ]
+    },
+    {
+      "id": "prod-5g-antenna",
+      "name": "5G Base Station Antenna",
+      "category": "electronics",
+      "preferred_manufacturer_id": "mfg-jp-01",
+      "bom": [
+        {"material": "copper-cathode", "qty": 50},
+        {"material": "aluminum-alloy", "qty": 30},
+        {"material": "silicon-wafer", "qty": 20},
+        {"material": "plastic-abs", "qty": 10}
+      ]
+    },
+    {
+      "id": "prod-offshore-platform",
+      "name": "Offshore Wind Platform",
+      "category": "energy",
+      "preferred_manufacturer_id": "mfg-de-01",
+      "bom": [
+        {"material": "steel-hrcoil", "qty": 15000},
+        {"material": "steel-crcoil", "qty": 5000},
+        {"material": "copper-cathode", "qty": 2000},
+        {"material": "carbon-fiber", "qty": 800}
+      ]
+    },
+    {
+      "id": "prod-surgical-robot",
+      "name": "Surgical Robot System",
+      "category": "medical",
+      "preferred_manufacturer_id": "mfg-jp-01",
+      "bom": [
+        {"material": "titanium-alloy", "qty": 50},
+        {"material": "silicon-wafer", "qty": 10},
+        {"material": "carbon-fiber", "qty": 20},
+        {"material": "specialty-glass", "qty": 5},
+        {"material": "rare-earth-ndfeb", "qty": 15}
+      ]
+    }
+  ],
+
+  "suppliers": [
+    {
+      "id": "sup-cn-01", "name": "Baosteel Group", "country": "CN", "jurisdiction": "CN",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 720, "markup": 1.08, "currency": "USD", "lead_time_days": 30,
+      "certifications": ["ISO9001", "ISO14001", "IATF16949"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["bulk-supply", "custom-alloy", "hot-dip-galvanizing"],
+      "policies": {"sustainability": "medium", "min_order": 100},
+      "tier": "T1", "lat": 31.2304, "lng": 121.4737, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-02", "name": "Chalco Aluminum", "country": "CN", "jurisdiction": "CN",
+      "materials": ["aluminum-alloy"],
+      "base_price": 2800, "markup": 1.1, "currency": "USD", "lead_time_days": 25,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["extrusion", "sheet-rolling", "custom-alloy"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": 34.7466, "lng": 113.6254, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-03", "name": "LONGi Green Energy", "country": "CN", "jurisdiction": "CN",
+      "materials": ["silicon-poly"],
+      "base_price": 22000, "markup": 1.12, "currency": "USD", "lead_time_days": 45,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["monocrystalline", "wafer-cutting"],
+      "policies": {"sustainability": "high", "min_order": 10},
+      "tier": "T1", "lat": 34.2658, "lng": 108.9425, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-04", "name": "CATL Materials Division", "country": "CN", "jurisdiction": "CN",
+      "materials": ["graphite-anode"],
+      "base_price": 10000, "markup": 1.1, "currency": "USD", "lead_time_days": 30,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["synthetic-graphite", "natural-graphite", "silicon-carbon-composite"],
+      "policies": {"sustainability": "high", "min_order": 20},
+      "tier": "T1", "lat": 26.6654, "lng": 119.548, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-05", "name": "China Northern Rare Earth", "country": "CN", "jurisdiction": "CN",
+      "materials": ["rare-earth-ndfeb"],
+      "base_price": 85, "markup": 1.15, "currency": "USD", "lead_time_days": 50,
+      "certifications": ["ISO9001"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["sintered-ndfeb", "bonded-magnets", "custom-grades"],
+      "policies": {"sustainability": "low", "min_order": 100},
+      "tier": "T1", "lat": 40.6571, "lng": 109.8403, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-06", "name": "Fuyao Glass Industry", "country": "CN", "jurisdiction": "CN",
+      "materials": ["specialty-glass"],
+      "base_price": 35000, "markup": 1.08, "currency": "USD", "lead_time_days": 30,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["automotive-glass", "display-glass", "tempered"],
+      "policies": {"sustainability": "medium", "min_order": 5},
+      "tier": "T1", "lat": 26.0745, "lng": 119.2965, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-07", "name": "Sinopec Chemical Sales", "country": "CN", "jurisdiction": "CN",
+      "materials": ["plastic-abs", "plastic-pp"],
+      "base_price": 1400, "markup": 1.06, "currency": "USD", "lead_time_days": 15,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["injection-grade", "extrusion-grade", "flame-retardant"],
+      "policies": {"sustainability": "low", "min_order": 25},
+      "tier": "T2", "lat": 31.2304, "lng": 121.4737, "endpoint": ""
+    },
+    {
+      "id": "sup-cn-08", "name": "Ganfeng Lithium", "country": "CN", "jurisdiction": "CN",
+      "materials": ["lithium-carbonate"],
+      "base_price": 18000, "markup": 1.12, "currency": "USD", "lead_time_days": 40,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["CN-Export-Control"],
+      "capabilities": ["battery-grade", "hydroxide", "recycled-lithium"],
+      "policies": {"sustainability": "medium", "min_order": 10},
+      "tier": "T1", "lat": 27.8136, "lng": 114.9353, "endpoint": ""
+    },
+    {
+      "id": "sup-jp-01", "name": "Shin-Etsu Chemical", "country": "JP", "jurisdiction": "JP",
+      "materials": ["silicon-wafer"],
+      "base_price": 5.5, "markup": 1.15, "currency": "USD", "lead_time_days": 60,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": ["JP-Foreign-Trade-Act"],
+      "capabilities": ["300mm-wafer", "200mm-wafer", "epitaxial"],
+      "policies": {"sustainability": "high", "min_order": 1000},
+      "tier": "T1", "lat": 35.6762, "lng": 139.6503, "endpoint": ""
+    },
+    {
+      "id": "sup-jp-02", "name": "Toray Industries", "country": "JP", "jurisdiction": "JP",
+      "materials": ["carbon-fiber"],
+      "base_price": 22000, "markup": 1.18, "currency": "USD", "lead_time_days": 45,
+      "certifications": ["ISO9001", "AS9100"],
+      "compliance": ["JP-Foreign-Trade-Act"],
+      "capabilities": ["aerospace-grade", "automotive-grade", "prepreg"],
+      "policies": {"sustainability": "high", "min_order": 5},
+      "tier": "T1", "lat": 34.6937, "lng": 135.5023, "endpoint": ""
+    },
+    {
+      "id": "sup-jp-03", "name": "Nippon Steel Corporation", "country": "JP", "jurisdiction": "JP",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 880, "markup": 1.12, "currency": "USD", "lead_time_days": 35,
+      "certifications": ["ISO9001", "IATF16949", "ISO14001"],
+      "compliance": ["JP-Foreign-Trade-Act"],
+      "capabilities": ["ultra-high-strength", "automotive-sheet", "electrical-steel"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": 35.6762, "lng": 139.6503, "endpoint": ""
+    },
+    {
+      "id": "sup-jp-04", "name": "AGC Inc", "country": "JP", "jurisdiction": "JP",
+      "materials": ["specialty-glass"],
+      "base_price": 42000, "markup": 1.15, "currency": "USD", "lead_time_days": 35,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["JP-Foreign-Trade-Act"],
+      "capabilities": ["display-glass", "chemically-strengthened", "ultra-thin"],
+      "policies": {"sustainability": "high", "min_order": 2},
+      "tier": "T1", "lat": 35.6762, "lng": 139.6503, "endpoint": ""
+    },
+    {
+      "id": "sup-kr-01", "name": "SK Siltron", "country": "KR", "jurisdiction": "KR",
+      "materials": ["silicon-wafer"],
+      "base_price": 4.8, "markup": 1.12, "currency": "USD", "lead_time_days": 55,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": ["KR-Strategic-Tech"],
+      "capabilities": ["300mm-wafer", "epitaxial", "SiC-wafer"],
+      "policies": {"sustainability": "medium", "min_order": 500},
+      "tier": "T1", "lat": 36.0322, "lng": 128.3471, "endpoint": ""
+    },
+    {
+      "id": "sup-kr-02", "name": "POSCO Holdings", "country": "KR", "jurisdiction": "KR",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 790, "markup": 1.1, "currency": "USD", "lead_time_days": 30,
+      "certifications": ["ISO9001", "IATF16949", "ISO14001"],
+      "compliance": ["KR-Strategic-Tech"],
+      "capabilities": ["automotive-steel", "stainless", "grain-oriented-electrical"],
+      "policies": {"sustainability": "high", "min_order": 100},
+      "tier": "T1", "lat": 36.019, "lng": 129.3435, "endpoint": ""
+    },
+    {
+      "id": "sup-kr-03", "name": "POSCO-Pilbara Lithium", "country": "KR", "jurisdiction": "KR",
+      "materials": ["lithium-carbonate"],
+      "base_price": 19500, "markup": 1.1, "currency": "USD", "lead_time_days": 42,
+      "certifications": ["ISO9001"],
+      "compliance": ["KR-Strategic-Tech"],
+      "capabilities": ["battery-grade", "hydroxide-conversion"],
+      "policies": {"sustainability": "medium", "min_order": 10},
+      "tier": "T1", "lat": 34.9406, "lng": 127.6961, "endpoint": ""
+    },
+    {
+      "id": "sup-tw-01", "name": "GlobalWafers Co", "country": "TW", "jurisdiction": "TW",
+      "materials": ["silicon-wafer"],
+      "base_price": 5.0, "markup": 1.1, "currency": "USD", "lead_time_days": 55,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["300mm-wafer", "200mm-wafer", "FZ-wafer"],
+      "policies": {"sustainability": "medium", "min_order": 500},
+      "tier": "T1", "lat": 24.8138, "lng": 120.9675, "endpoint": ""
+    },
+    {
+      "id": "sup-tw-02", "name": "Corning Display Asia", "country": "TW", "jurisdiction": "TW",
+      "materials": ["specialty-glass"],
+      "base_price": 45000, "markup": 1.12, "currency": "USD", "lead_time_days": 30,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["gorilla-glass", "OLED-substrate", "ultra-thin"],
+      "policies": {"sustainability": "medium", "min_order": 3},
+      "tier": "T1", "lat": 24.1477, "lng": 120.6736, "endpoint": ""
+    },
+    {
+      "id": "sup-in-01", "name": "Tata Steel Limited", "country": "IN", "jurisdiction": "IN",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 650, "markup": 1.06, "currency": "USD", "lead_time_days": 28,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["IN-Environmental-Protection"],
+      "capabilities": ["automotive-grade", "construction-grade", "tinplate"],
+      "policies": {"sustainability": "high", "min_order": 200},
+      "tier": "T1", "lat": 22.8046, "lng": 86.2029, "endpoint": ""
+    },
+    {
+      "id": "sup-in-02", "name": "Vardhman Textiles", "country": "IN", "jurisdiction": "IN",
+      "materials": ["cotton-raw"],
+      "base_price": 1800, "markup": 1.05, "currency": "USD", "lead_time_days": 12,
+      "certifications": ["ISO9001", "OEKO-TEX"],
+      "compliance": ["IN-Environmental-Protection"],
+      "capabilities": ["spinning", "dyeing", "organic-cotton"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": 30.901, "lng": 75.8573, "endpoint": ""
+    },
+    {
+      "id": "sup-in-03", "name": "Kerala Minerals & Metals", "country": "IN", "jurisdiction": "IN",
+      "materials": ["titanium-alloy"],
+      "base_price": 28000, "markup": 1.08, "currency": "USD", "lead_time_days": 50,
+      "certifications": ["ISO9001"],
+      "compliance": ["IN-Environmental-Protection"],
+      "capabilities": ["sponge-titanium", "Ti-6Al-4V", "medical-grade"],
+      "policies": {"sustainability": "medium", "min_order": 5},
+      "tier": "T2", "lat": 8.8932, "lng": 76.6141, "endpoint": ""
+    },
+    {
+      "id": "sup-in-04", "name": "Hindalco Copper", "country": "IN", "jurisdiction": "IN",
+      "materials": ["copper-cathode"],
+      "base_price": 8500, "markup": 1.06, "currency": "USD", "lead_time_days": 20,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["IN-Environmental-Protection"],
+      "capabilities": ["LME-grade-A", "copper-rod", "high-purity"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": 22.3072, "lng": 73.1812, "endpoint": ""
+    },
+    {
+      "id": "sup-au-01", "name": "Pilbara Minerals", "country": "AU", "jurisdiction": "AU",
+      "materials": ["lithium-carbonate"],
+      "base_price": 20000, "markup": 1.15, "currency": "USD", "lead_time_days": 45,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["AU-Critical-Minerals"],
+      "capabilities": ["spodumene-concentrate", "battery-grade-conversion"],
+      "policies": {"sustainability": "high", "min_order": 20},
+      "tier": "T1", "lat": -21.2786, "lng": 119.7312, "endpoint": ""
+    },
+    {
+      "id": "sup-au-02", "name": "Alcoa Australia", "country": "AU", "jurisdiction": "AU",
+      "materials": ["aluminum-alloy"],
+      "base_price": 2950, "markup": 1.12, "currency": "USD", "lead_time_days": 28,
+      "certifications": ["ISO9001", "ISO14001", "ASI"],
+      "compliance": ["AU-Critical-Minerals"],
+      "capabilities": ["smelting", "rolling", "aerospace-alloy"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": -32.2408, "lng": 115.8887, "endpoint": ""
+    },
+    {
+      "id": "sup-au-03", "name": "BHP Olympic Dam", "country": "AU", "jurisdiction": "AU",
+      "materials": ["copper-cathode"],
+      "base_price": 9200, "markup": 1.14, "currency": "USD", "lead_time_days": 25,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["AU-Critical-Minerals"],
+      "capabilities": ["LME-grade-A", "electro-refining"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": -30.445, "lng": 136.8888, "endpoint": ""
+    },
+    {
+      "id": "sup-cl-01", "name": "Codelco", "country": "CL", "jurisdiction": "CL",
+      "materials": ["copper-cathode"],
+      "base_price": 8200, "markup": 1.08, "currency": "USD", "lead_time_days": 22,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": [],
+      "capabilities": ["electro-refined", "SX-EW", "high-purity"],
+      "policies": {"sustainability": "medium", "min_order": 100},
+      "tier": "T1", "lat": -23.6509, "lng": -70.3975, "endpoint": ""
+    },
+    {
+      "id": "sup-cl-02", "name": "SQM Lithium", "country": "CL", "jurisdiction": "CL",
+      "materials": ["lithium-carbonate"],
+      "base_price": 16500, "markup": 1.1, "currency": "USD", "lead_time_days": 38,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["brine-extraction", "battery-grade", "lithium-hydroxide"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": -23.6345, "lng": -68.3986, "endpoint": ""
+    },
+    {
+      "id": "sup-cd-01", "name": "Glencore Katanga Mining", "country": "CD", "jurisdiction": "CD",
+      "materials": ["cobalt-sulfate"],
+      "base_price": 8500, "markup": 1.2, "currency": "USD", "lead_time_days": 50,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["cobalt-hydroxide", "battery-grade-sulfate"],
+      "policies": {"sustainability": "low", "min_order": 10},
+      "tier": "T2", "lat": -10.983, "lng": 25.4913, "endpoint": ""
+    },
+    {
+      "id": "sup-id-01", "name": "PT Vale Indonesia", "country": "ID", "jurisdiction": "ID",
+      "materials": ["nickel-sulfate"],
+      "base_price": 5200, "markup": 1.12, "currency": "USD", "lead_time_days": 35,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["ID-Mining-Regulation"],
+      "capabilities": ["mixed-hydroxide-precipitate", "nickel-matte", "battery-grade"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": -2.5307, "lng": 121.3556, "endpoint": ""
+    },
+    {
+      "id": "sup-id-02", "name": "Halcyon Agri Indonesia", "country": "ID", "jurisdiction": "ID",
+      "materials": ["natural-rubber"],
+      "base_price": 1800, "markup": 1.08, "currency": "USD", "lead_time_days": 18,
+      "certifications": ["ISO9001"],
+      "compliance": ["ID-Mining-Regulation", "ID-Deforestation-Act"],
+      "capabilities": ["TSR-20", "TSR-10", "latex"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": -2.9761, "lng": 104.7754, "endpoint": ""
+    },
+    {
+      "id": "sup-br-01", "name": "Gerdau S.A.", "country": "BR", "jurisdiction": "BR",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 680, "markup": 1.07, "currency": "USD", "lead_time_days": 28,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["BR-Environmental-Code"],
+      "capabilities": ["long-products", "flat-products", "specialty-steel"],
+      "policies": {"sustainability": "medium", "min_order": 100},
+      "tier": "T1", "lat": -29.9167, "lng": -51.1833, "endpoint": ""
+    },
+    {
+      "id": "sup-br-02", "name": "Coteminas Textiles", "country": "BR", "jurisdiction": "BR",
+      "materials": ["cotton-raw"],
+      "base_price": 2100, "markup": 1.06, "currency": "USD", "lead_time_days": 14,
+      "certifications": ["ISO9001"],
+      "compliance": ["BR-Environmental-Code"],
+      "capabilities": ["raw-cotton", "combed-cotton", "organic"],
+      "policies": {"sustainability": "medium", "min_order": 100},
+      "tier": "T2", "lat": -19.9167, "lng": -43.9345, "endpoint": ""
+    },
+    {
+      "id": "sup-vn-01", "name": "Vietnam Rubber Group", "country": "VN", "jurisdiction": "VN",
+      "materials": ["natural-rubber"],
+      "base_price": 1650, "markup": 1.06, "currency": "USD", "lead_time_days": 16,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["TSR-20", "latex-concentrate", "RSS-3"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": 10.8231, "lng": 106.6297, "endpoint": ""
+    },
+    {
+      "id": "sup-vn-02", "name": "Thanh Cong Textile", "country": "VN", "jurisdiction": "VN",
+      "materials": ["cotton-raw"],
+      "base_price": 1700, "markup": 1.05, "currency": "USD", "lead_time_days": 10,
+      "certifications": ["ISO9001", "OEKO-TEX"],
+      "compliance": [],
+      "capabilities": ["yarn", "fabric", "dyed-cotton"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T2", "lat": 10.8231, "lng": 106.6297, "endpoint": ""
+    },
+    {
+      "id": "sup-my-01", "name": "Top Glove Raw Materials", "country": "MY", "jurisdiction": "MY",
+      "materials": ["natural-rubber"],
+      "base_price": 1750, "markup": 1.07, "currency": "USD", "lead_time_days": 15,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["latex", "nitrile", "TSR-20"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": 3.139, "lng": 101.6869, "endpoint": ""
+    },
+    {
+      "id": "sup-my-02", "name": "Petronas Chemicals Group", "country": "MY", "jurisdiction": "MY",
+      "materials": ["plastic-pp", "plastic-abs"],
+      "base_price": 1150, "markup": 1.08, "currency": "USD", "lead_time_days": 18,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": [],
+      "capabilities": ["injection-grade", "film-grade", "automotive-grade"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": 3.9654, "lng": 103.428, "endpoint": ""
+    },
+    {
+      "id": "sup-th-01", "name": "Sri Trang Agro-Industry", "country": "TH", "jurisdiction": "TH",
+      "materials": ["natural-rubber"],
+      "base_price": 1600, "markup": 1.05, "currency": "USD", "lead_time_days": 14,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": [],
+      "capabilities": ["TSR-20", "concentrated-latex", "RSS"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": 7.0086, "lng": 100.4746, "endpoint": ""
+    },
+    {
+      "id": "sup-th-02", "name": "Thai Summit Group", "country": "TH", "jurisdiction": "TH",
+      "materials": ["aluminum-alloy"],
+      "base_price": 3100, "markup": 1.09, "currency": "USD", "lead_time_days": 22,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": [],
+      "capabilities": ["die-casting", "stamping", "automotive-parts"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T2", "lat": 13.7563, "lng": 100.5018, "endpoint": ""
+    },
+    {
+      "id": "sup-mx-01", "name": "Ternium Mexico", "country": "MX", "jurisdiction": "MX",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 710, "markup": 1.06, "currency": "USD", "lead_time_days": 22,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": [],
+      "capabilities": ["automotive-flat", "galvanized", "prepainted"],
+      "policies": {"sustainability": "medium", "min_order": 100},
+      "tier": "T1", "lat": 25.6866, "lng": -100.3161, "endpoint": ""
+    },
+    {
+      "id": "sup-mx-02", "name": "Nemak S.A.", "country": "MX", "jurisdiction": "MX",
+      "materials": ["aluminum-alloy"],
+      "base_price": 3200, "markup": 1.07, "currency": "USD", "lead_time_days": 20,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": [],
+      "capabilities": ["engine-blocks", "structural-castings", "EV-components"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": 25.6866, "lng": -100.3161, "endpoint": ""
+    },
+    {
+      "id": "sup-sa-01", "name": "SABIC Polymers", "country": "SA", "jurisdiction": "SA",
+      "materials": ["plastic-abs", "plastic-pp"],
+      "base_price": 1100, "markup": 1.08, "currency": "USD", "lead_time_days": 20,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["SA-Petrochemical-Reg"],
+      "capabilities": ["engineering-plastics", "automotive-grade", "flame-retardant"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": 26.392, "lng": 49.9777, "endpoint": ""
+    },
+    {
+      "id": "sup-za-01", "name": "Tronox Holdings SA", "country": "ZA", "jurisdiction": "ZA",
+      "materials": ["titanium-alloy"],
+      "base_price": 30000, "markup": 1.1, "currency": "USD", "lead_time_days": 48,
+      "certifications": ["ISO9001"],
+      "compliance": ["ZA-Mineral-Resources-Act"],
+      "capabilities": ["TiO2-pigment", "titanium-sponge", "Ti-6Al-4V-powder"],
+      "policies": {"sustainability": "medium", "min_order": 5},
+      "tier": "T2", "lat": -28.7518, "lng": 32.0631, "endpoint": ""
+    },
+    {
+      "id": "sup-ca-01", "name": "Vale Canada (Sudbury)", "country": "CA", "jurisdiction": "CA",
+      "materials": ["nickel-sulfate"],
+      "base_price": 5800, "markup": 1.12, "currency": "USD", "lead_time_days": 32,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["CA-Environmental-Protection"],
+      "capabilities": ["class-1-nickel", "battery-grade-sulfate", "nickel-powder"],
+      "policies": {"sustainability": "high", "min_order": 20},
+      "tier": "T1", "lat": 46.4917, "lng": -81.0, "endpoint": ""
+    },
+    {
+      "id": "sup-ca-02", "name": "Rio Tinto Alcan", "country": "CA", "jurisdiction": "CA",
+      "materials": ["aluminum-alloy"],
+      "base_price": 2750, "markup": 1.1, "currency": "USD", "lead_time_days": 25,
+      "certifications": ["ISO9001", "ISO14001", "ASI"],
+      "compliance": ["CA-Environmental-Protection"],
+      "capabilities": ["primary-aluminum", "alloy-ingots", "rolling"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": 48.4285, "lng": -71.0536, "endpoint": ""
+    },
+    {
+      "id": "sup-tr-01", "name": "Kardemir Iron & Steel", "country": "TR", "jurisdiction": "TR",
+      "materials": ["steel-hrcoil"],
+      "base_price": 660, "markup": 1.07, "currency": "USD", "lead_time_days": 25,
+      "certifications": ["ISO9001"],
+      "compliance": ["TR-Environmental-Law"],
+      "capabilities": ["flat-products", "construction-grade", "rail-steel"],
+      "policies": {"sustainability": "low", "min_order": 200},
+      "tier": "T2", "lat": 40.614, "lng": 32.648, "endpoint": ""
+    },
+    {
+      "id": "sup-tr-02", "name": "Sisecam Glass", "country": "TR", "jurisdiction": "TR",
+      "materials": ["specialty-glass"],
+      "base_price": 32000, "markup": 1.06, "currency": "USD", "lead_time_days": 25,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["TR-Environmental-Law"],
+      "capabilities": ["flat-glass", "automotive-glass", "solar-glass"],
+      "policies": {"sustainability": "medium", "min_order": 10},
+      "tier": "T1", "lat": 41.0082, "lng": 28.9784, "endpoint": ""
+    },
+    {
+      "id": "sup-gb-01", "name": "SGL Carbon UK", "country": "GB", "jurisdiction": "GB",
+      "materials": ["carbon-fiber"],
+      "base_price": 25000, "markup": 1.15, "currency": "USD", "lead_time_days": 40,
+      "certifications": ["ISO9001", "AS9100"],
+      "compliance": ["UK-Environmental-Act"],
+      "capabilities": ["aerospace-grade", "automotive-grade", "industrial"],
+      "policies": {"sustainability": "high", "min_order": 3},
+      "tier": "T1", "lat": 53.4808, "lng": -2.2426, "endpoint": ""
+    },
+    {
+      "id": "sup-de-01", "name": "ThyssenKrupp Steel Europe", "country": "DE", "jurisdiction": "DE",
+      "materials": ["steel-crcoil"],
+      "base_price": 950, "markup": 1.12, "currency": "USD", "lead_time_days": 30,
+      "certifications": ["ISO9001", "IATF16949", "ISO14001"],
+      "compliance": ["EU-CBAM", "EU-REACH"],
+      "capabilities": ["automotive-ultra-high-strength", "electrical-steel", "coated"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": 51.4556, "lng": 7.0116, "endpoint": ""
+    },
+    {
+      "id": "sup-de-02", "name": "SGL Carbon GmbH", "country": "DE", "jurisdiction": "DE",
+      "materials": ["carbon-fiber"],
+      "base_price": 24000, "markup": 1.14, "currency": "USD", "lead_time_days": 42,
+      "certifications": ["ISO9001", "AS9100", "ISO14001"],
+      "compliance": ["EU-CBAM", "EU-REACH"],
+      "capabilities": ["aerospace-prepreg", "wind-energy", "automotive-CF"],
+      "policies": {"sustainability": "high", "min_order": 3},
+      "tier": "T1", "lat": 50.0826, "lng": 8.2433, "endpoint": ""
+    },
+    {
+      "id": "sup-de-03", "name": "BASF Performance Materials", "country": "DE", "jurisdiction": "DE",
+      "materials": ["plastic-abs", "plastic-pp"],
+      "base_price": 1600, "markup": 1.1, "currency": "USD", "lead_time_days": 18,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["EU-CBAM", "EU-REACH"],
+      "capabilities": ["engineering-plastics", "compounds", "bio-based"],
+      "policies": {"sustainability": "high", "min_order": 10},
+      "tier": "T1", "lat": 49.4875, "lng": 8.466, "endpoint": ""
+    },
+    {
+      "id": "sup-ph-01", "name": "Philippine Copper Corp", "country": "PH", "jurisdiction": "PH",
+      "materials": ["copper-cathode"],
+      "base_price": 8400, "markup": 1.07, "currency": "USD", "lead_time_days": 22,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["LME-grade-A", "copper-concentrate"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": 14.5995, "lng": 120.9842, "endpoint": ""
+    },
+    {
+      "id": "sup-ph-02", "name": "JG Summit Petrochemicals", "country": "PH", "jurisdiction": "PH",
+      "materials": ["plastic-pp", "plastic-abs"],
+      "base_price": 1200, "markup": 1.07, "currency": "USD", "lead_time_days": 16,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["injection-grade", "packaging-grade"],
+      "policies": {"sustainability": "medium", "min_order": 20},
+      "tier": "T2", "lat": 14.2777, "lng": 121.0437, "endpoint": ""
+    },
+    {
+      "id": "sup-pl-01", "name": "KGHM Polska Miedz", "country": "PL", "jurisdiction": "PL",
+      "materials": ["copper-cathode"],
+      "base_price": 8700, "markup": 1.09, "currency": "USD", "lead_time_days": 24,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["EU-CBAM"],
+      "capabilities": ["LME-grade-A", "silver-byproduct"],
+      "policies": {"sustainability": "high", "min_order": 50},
+      "tier": "T1", "lat": 51.402, "lng": 16.209, "endpoint": ""
+    },
+    {
+      "id": "sup-ar-01", "name": "Aluar Aluminio Argentino", "country": "AR", "jurisdiction": "AR",
+      "materials": ["aluminum-alloy"],
+      "base_price": 2900, "markup": 1.08, "currency": "USD", "lead_time_days": 26,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["primary-aluminum", "alloy-billets"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": -43.3, "lng": -65.1, "endpoint": ""
+    },
+    {
+      "id": "sup-pe-01", "name": "Southern Copper Peru", "country": "PE", "jurisdiction": "PE",
+      "materials": ["copper-cathode"],
+      "base_price": 8100, "markup": 1.07, "currency": "USD", "lead_time_days": 24,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": [],
+      "capabilities": ["SX-EW", "electro-refined"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": -17.639, "lng": -71.338, "endpoint": ""
+    },
+    {
+      "id": "sup-bd-01", "name": "Beximco Textiles", "country": "BD", "jurisdiction": "BD",
+      "materials": ["cotton-raw"],
+      "base_price": 1500, "markup": 1.04, "currency": "USD", "lead_time_days": 10,
+      "certifications": ["ISO9001", "OEKO-TEX"],
+      "compliance": [],
+      "capabilities": ["yarn", "knit-fabric", "denim"],
+      "policies": {"sustainability": "medium", "min_order": 25},
+      "tier": "T1", "lat": 23.8103, "lng": 90.4125, "endpoint": ""
+    },
+    {
+      "id": "sup-fi-01", "name": "Outokumpu Oyj", "country": "FI", "jurisdiction": "FI",
+      "materials": ["steel-crcoil"],
+      "base_price": 920, "markup": 1.13, "currency": "USD", "lead_time_days": 28,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["EU-CBAM"],
+      "capabilities": ["stainless-steel", "duplex", "super-austenitic"],
+      "policies": {"sustainability": "high", "min_order": 25},
+      "tier": "T1", "lat": 61.4978, "lng": 23.761, "endpoint": ""
+    },
+    {
+      "id": "sup-no-01", "name": "Elkem ASA", "country": "NO", "jurisdiction": "NO",
+      "materials": ["silicon-poly"],
+      "base_price": 21000, "markup": 1.14, "currency": "USD", "lead_time_days": 40,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": [],
+      "capabilities": ["metallurgical-silicon", "solar-grade", "foundry-alloys"],
+      "policies": {"sustainability": "high", "min_order": 10},
+      "tier": "T1", "lat": 59.9139, "lng": 10.7522, "endpoint": ""
+    },
+    {
+      "id": "sup-ng-01", "name": "Dangote Industries", "country": "NG", "jurisdiction": "NG",
+      "materials": ["plastic-pp"],
+      "base_price": 1300, "markup": 1.1, "currency": "USD", "lead_time_days": 20,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["packaging-grade", "pipe-grade"],
+      "policies": {"sustainability": "low", "min_order": 50},
+      "tier": "T2", "lat": 6.5244, "lng": 3.3792, "endpoint": ""
+    },
+    {
+      "id": "sup-eg-01", "name": "EZZ Steel", "country": "EG", "jurisdiction": "EG",
+      "materials": ["steel-hrcoil"],
+      "base_price": 640, "markup": 1.06, "currency": "USD", "lead_time_days": 22,
+      "certifications": ["ISO9001"],
+      "compliance": [],
+      "capabilities": ["flat-products", "rebar", "wire-rod"],
+      "policies": {"sustainability": "low", "min_order": 200},
+      "tier": "T2", "lat": 30.0444, "lng": 31.2357, "endpoint": ""
+    }
+  ],
+
+  "manufacturers": [
+    {
+      "id": "mfg-us-01", "name": "TechCell Gigafactory", "country": "US", "jurisdiction": "US",
+      "capabilities": ["battery-assembly", "pack-testing", "module-integration", "laptop-assembly"],
+      "products": ["prod-ev-battery", "prod-laptop"],
+      "endpoint": "", "policies": {"sustainability": "high"}
+    },
+    {
+      "id": "mfg-de-01", "name": "AutoWerk GmbH", "country": "DE", "jurisdiction": "DE",
+      "capabilities": ["engine-assembly", "turbine-nacelle", "precision-machining"],
+      "products": ["prod-auto-engine", "prod-wind-turbine"],
+      "endpoint": "", "policies": {"sustainability": "high"}
+    },
+    {
+      "id": "mfg-jp-01", "name": "NexGen Electronics", "country": "JP", "jurisdiction": "JP",
+      "capabilities": ["smartphone-assembly", "medical-device", "precision-optics"],
+      "products": ["prod-smartphone", "prod-mri-scanner"],
+      "endpoint": "", "policies": {"sustainability": "high"}
+    },
+    {
+      "id": "mfg-cn-01", "name": "SolarTech Manufacturing", "country": "CN", "jurisdiction": "CN",
+      "capabilities": ["solar-cell", "module-lamination", "panel-assembly"],
+      "products": ["prod-solar-panel"],
+      "endpoint": "", "policies": {"sustainability": "medium"}
+    },
+    {
+      "id": "mfg-in-01", "name": "TextileCraft Industries", "country": "IN", "jurisdiction": "IN",
+      "capabilities": ["garment-manufacturing", "dyeing", "finishing", "quality-control"],
+      "products": ["prod-clothing"],
+      "endpoint": "", "policies": {"sustainability": "high"}
+    }
+  ],
+
+  "logistics_providers": [
+    {
+      "id": "log-01", "name": "Maersk Line", "country": "DK", "jurisdiction": "DK",
+      "modes": ["ocean-container", "intermodal", "cold-chain"],
+      "endpoint": "", "policies": {"sustainability": "high"}
+    },
+    {
+      "id": "log-02", "name": "MSC Mediterranean Shipping", "country": "CH", "jurisdiction": "CH",
+      "modes": ["ocean-container", "bulk-cargo"],
+      "endpoint": "", "policies": {"sustainability": "medium"}
+    },
+    {
+      "id": "log-03", "name": "CMA CGM Group", "country": "FR", "jurisdiction": "FR",
+      "modes": ["ocean-container", "air-freight", "inland-logistics"],
+      "endpoint": "", "policies": {"sustainability": "high"}
+    },
+    {
+      "id": "log-04", "name": "COSCO Shipping Lines", "country": "CN", "jurisdiction": "CN",
+      "modes": ["ocean-container", "bulk-cargo", "tanker"],
+      "endpoint": "", "policies": {"sustainability": "medium"}
+    }
+  ],
+
+  "retailers": [
+    {
+      "id": "ret-01", "name": "Amazon Procurement Services", "country": "US", "jurisdiction": "US",
+      "capabilities": ["electronics", "consumer-goods", "marketplace"],
+      "markets": ["US", "EU", "JP"], "endpoint": "", "policies": {}
+    },
+    {
+      "id": "ret-02", "name": "Walmart Global Sourcing", "country": "US", "jurisdiction": "US",
+      "capabilities": ["bulk-procurement", "consumer-goods", "textiles"],
+      "markets": ["US", "MX", "CA"], "endpoint": "", "policies": {}
+    },
+    {
+      "id": "ret-03", "name": "European Retail Alliance", "country": "DE", "jurisdiction": "DE",
+      "capabilities": ["electronics", "automotive-parts", "industrial"],
+      "markets": ["DE", "FR", "NL", "GB"], "endpoint": "", "policies": {}
+    }
+  ],
+
+  "routes": [
+    {"id": "route-cn-us-01", "from": "CN", "to": "US", "ports": ["Shanghai", "Long Beach"], "transit_days": 15, "risk_score": 0.12, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-cn-us-02", "from": "CN", "to": "US", "ports": ["Shenzhen", "Los Angeles"], "transit_days": 16, "risk_score": 0.14, "cost_index": 1.02, "mode": "ocean"},
+    {"id": "route-cn-us-03", "from": "CN", "to": "US", "ports": ["Shanghai", "Savannah"], "transit_days": 28, "risk_score": 0.18, "cost_index": 1.15, "mode": "ocean"},
+    {"id": "route-cn-us-04", "from": "CN", "to": "US", "ports": ["Ningbo", "New York-New Jersey"], "transit_days": 30, "risk_score": 0.2, "cost_index": 1.18, "mode": "ocean"},
+    {"id": "route-jp-us-01", "from": "JP", "to": "US", "ports": ["Yokohama", "Long Beach"], "transit_days": 12, "risk_score": 0.08, "cost_index": 1.05, "mode": "ocean"},
+    {"id": "route-jp-us-02", "from": "JP", "to": "US", "ports": ["Kobe", "Seattle"], "transit_days": 11, "risk_score": 0.07, "cost_index": 1.03, "mode": "ocean"},
+    {"id": "route-kr-us-01", "from": "KR", "to": "US", "ports": ["Busan", "Long Beach"], "transit_days": 13, "risk_score": 0.09, "cost_index": 1.04, "mode": "ocean"},
+    {"id": "route-kr-us-02", "from": "KR", "to": "US", "ports": ["Busan", "New York-New Jersey"], "transit_days": 26, "risk_score": 0.15, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-tw-us-01", "from": "TW", "to": "US", "ports": ["Kaohsiung", "Los Angeles"], "transit_days": 14, "risk_score": 0.11, "cost_index": 1.03, "mode": "ocean"},
+    {"id": "route-in-us-01", "from": "IN", "to": "US", "ports": ["Mumbai JNPT", "Jeddah", "New York-New Jersey"], "transit_days": 24, "risk_score": 0.2, "cost_index": 1.2, "mode": "ocean"},
+    {"id": "route-in-us-02", "from": "IN", "to": "US", "ports": ["Chennai", "Singapore", "Long Beach"], "transit_days": 28, "risk_score": 0.18, "cost_index": 1.22, "mode": "ocean"},
+    {"id": "route-au-us-01", "from": "AU", "to": "US", "ports": ["Sydney", "Long Beach"], "transit_days": 20, "risk_score": 0.1, "cost_index": 1.08, "mode": "ocean"},
+    {"id": "route-au-us-02", "from": "AU", "to": "US", "ports": ["Fremantle", "Los Angeles"], "transit_days": 22, "risk_score": 0.11, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-cl-us-01", "from": "CL", "to": "US", "ports": ["San Antonio", "Long Beach"], "transit_days": 14, "risk_score": 0.08, "cost_index": 0.95, "mode": "ocean"},
+    {"id": "route-cl-us-02", "from": "CL", "to": "US", "ports": ["Valparaiso", "Houston"], "transit_days": 16, "risk_score": 0.12, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-cd-us-01", "from": "CD", "to": "US", "ports": ["Matadi", "Durban", "Houston"], "transit_days": 32, "risk_score": 0.35, "cost_index": 1.4, "mode": "ocean"},
+    {"id": "route-id-us-01", "from": "ID", "to": "US", "ports": ["Tanjung Priok", "Singapore", "Long Beach"], "transit_days": 22, "risk_score": 0.15, "cost_index": 1.08, "mode": "ocean"},
+    {"id": "route-br-us-01", "from": "BR", "to": "US", "ports": ["Santos", "Houston"], "transit_days": 12, "risk_score": 0.1, "cost_index": 0.92, "mode": "ocean"},
+    {"id": "route-br-us-02", "from": "BR", "to": "US", "ports": ["Santos", "New York-New Jersey"], "transit_days": 14, "risk_score": 0.1, "cost_index": 0.95, "mode": "ocean"},
+    {"id": "route-vn-us-01", "from": "VN", "to": "US", "ports": ["Ho Chi Minh City", "Long Beach"], "transit_days": 18, "risk_score": 0.14, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-my-us-01", "from": "MY", "to": "US", "ports": ["Port Klang", "Singapore", "Long Beach"], "transit_days": 20, "risk_score": 0.12, "cost_index": 1.02, "mode": "ocean"},
+    {"id": "route-th-us-01", "from": "TH", "to": "US", "ports": ["Laem Chabang", "Singapore", "Long Beach"], "transit_days": 21, "risk_score": 0.13, "cost_index": 1.04, "mode": "ocean"},
+    {"id": "route-mx-us-01", "from": "MX", "to": "US", "ports": ["Manzanillo", "Long Beach"], "transit_days": 4, "risk_score": 0.05, "cost_index": 0.7, "mode": "ocean"},
+    {"id": "route-mx-us-02", "from": "MX", "to": "US", "ports": ["Veracruz", "Houston"], "transit_days": 3, "risk_score": 0.04, "cost_index": 0.65, "mode": "ocean"},
+    {"id": "route-sa-us-01", "from": "SA", "to": "US", "ports": ["Jeddah", "New York-New Jersey"], "transit_days": 22, "risk_score": 0.2, "cost_index": 1.15, "mode": "ocean"},
+    {"id": "route-za-us-01", "from": "ZA", "to": "US", "ports": ["Durban", "New York-New Jersey"], "transit_days": 20, "risk_score": 0.15, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-ca-us-01", "from": "CA", "to": "US", "ports": ["Vancouver", "Seattle"], "transit_days": 3, "risk_score": 0.03, "cost_index": 0.6, "mode": "ocean"},
+    {"id": "route-ca-us-02", "from": "CA", "to": "US", "ports": ["Montreal", "New York-New Jersey"], "transit_days": 5, "risk_score": 0.04, "cost_index": 0.65, "mode": "ocean"},
+    {"id": "route-tr-us-01", "from": "TR", "to": "US", "ports": ["Istanbul Ambarli", "New York-New Jersey"], "transit_days": 18, "risk_score": 0.15, "cost_index": 1.08, "mode": "ocean"},
+    {"id": "route-gb-us-01", "from": "GB", "to": "US", "ports": ["Felixstowe", "New York-New Jersey"], "transit_days": 10, "risk_score": 0.06, "cost_index": 0.9, "mode": "ocean"},
+    {"id": "route-de-us-01", "from": "DE", "to": "US", "ports": ["Hamburg", "New York-New Jersey"], "transit_days": 12, "risk_score": 0.07, "cost_index": 0.95, "mode": "ocean"},
+
+    {"id": "route-cn-de-01", "from": "CN", "to": "DE", "ports": ["Shanghai", "Singapore", "Hamburg"], "transit_days": 28, "risk_score": 0.18, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-cn-de-02", "from": "CN", "to": "DE", "ports": ["Shenzhen", "Jeddah", "Hamburg"], "transit_days": 30, "risk_score": 0.22, "cost_index": 1.15, "mode": "ocean"},
+    {"id": "route-jp-de-01", "from": "JP", "to": "DE", "ports": ["Yokohama", "Singapore", "Hamburg"], "transit_days": 30, "risk_score": 0.15, "cost_index": 1.18, "mode": "ocean"},
+    {"id": "route-kr-de-01", "from": "KR", "to": "DE", "ports": ["Busan", "Singapore", "Hamburg"], "transit_days": 29, "risk_score": 0.14, "cost_index": 1.15, "mode": "ocean"},
+    {"id": "route-tw-de-01", "from": "TW", "to": "DE", "ports": ["Kaohsiung", "Singapore", "Hamburg"], "transit_days": 28, "risk_score": 0.16, "cost_index": 1.14, "mode": "ocean"},
+    {"id": "route-in-de-01", "from": "IN", "to": "DE", "ports": ["Mumbai JNPT", "Jeddah", "Hamburg"], "transit_days": 20, "risk_score": 0.16, "cost_index": 1.08, "mode": "ocean"},
+    {"id": "route-au-de-01", "from": "AU", "to": "DE", "ports": ["Fremantle", "Singapore", "Hamburg"], "transit_days": 32, "risk_score": 0.14, "cost_index": 1.2, "mode": "ocean"},
+    {"id": "route-cl-de-01", "from": "CL", "to": "DE", "ports": ["San Antonio", "Hamburg"], "transit_days": 25, "risk_score": 0.12, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-cd-de-01", "from": "CD", "to": "DE", "ports": ["Matadi", "Durban", "Cape Town", "Hamburg"], "transit_days": 28, "risk_score": 0.32, "cost_index": 1.35, "mode": "ocean"},
+    {"id": "route-id-de-01", "from": "ID", "to": "DE", "ports": ["Tanjung Priok", "Singapore", "Hamburg"], "transit_days": 26, "risk_score": 0.16, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-br-de-01", "from": "BR", "to": "DE", "ports": ["Santos", "Hamburg"], "transit_days": 16, "risk_score": 0.1, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-vn-de-01", "from": "VN", "to": "DE", "ports": ["Ho Chi Minh City", "Singapore", "Hamburg"], "transit_days": 26, "risk_score": 0.16, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-my-de-01", "from": "MY", "to": "DE", "ports": ["Port Klang", "Jeddah", "Hamburg"], "transit_days": 24, "risk_score": 0.15, "cost_index": 1.08, "mode": "ocean"},
+    {"id": "route-th-de-01", "from": "TH", "to": "DE", "ports": ["Laem Chabang", "Singapore", "Hamburg"], "transit_days": 25, "risk_score": 0.15, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-sa-de-01", "from": "SA", "to": "DE", "ports": ["Jeddah", "Hamburg"], "transit_days": 14, "risk_score": 0.13, "cost_index": 0.95, "mode": "ocean"},
+    {"id": "route-za-de-01", "from": "ZA", "to": "DE", "ports": ["Durban", "Cape Town", "Hamburg"], "transit_days": 18, "risk_score": 0.14, "cost_index": 1.05, "mode": "ocean"},
+    {"id": "route-ca-de-01", "from": "CA", "to": "DE", "ports": ["Montreal", "Hamburg"], "transit_days": 11, "risk_score": 0.06, "cost_index": 0.88, "mode": "ocean"},
+    {"id": "route-tr-de-01", "from": "TR", "to": "DE", "ports": ["Istanbul Ambarli", "Hamburg"], "transit_days": 7, "risk_score": 0.08, "cost_index": 0.78, "mode": "ocean"},
+    {"id": "route-gb-de-01", "from": "GB", "to": "DE", "ports": ["Felixstowe", "Hamburg"], "transit_days": 3, "risk_score": 0.03, "cost_index": 0.6, "mode": "ocean"},
+
+    {"id": "route-cn-jp-01", "from": "CN", "to": "JP", "ports": ["Shanghai", "Yokohama"], "transit_days": 4, "risk_score": 0.08, "cost_index": 0.7, "mode": "ocean"},
+    {"id": "route-cn-jp-02", "from": "CN", "to": "JP", "ports": ["Shenzhen", "Kobe"], "transit_days": 5, "risk_score": 0.1, "cost_index": 0.72, "mode": "ocean"},
+    {"id": "route-kr-jp-01", "from": "KR", "to": "JP", "ports": ["Busan", "Kobe"], "transit_days": 2, "risk_score": 0.04, "cost_index": 0.55, "mode": "ocean"},
+    {"id": "route-tw-jp-01", "from": "TW", "to": "JP", "ports": ["Kaohsiung", "Yokohama"], "transit_days": 4, "risk_score": 0.07, "cost_index": 0.68, "mode": "ocean"},
+    {"id": "route-au-jp-01", "from": "AU", "to": "JP", "ports": ["Melbourne", "Yokohama"], "transit_days": 14, "risk_score": 0.08, "cost_index": 0.95, "mode": "ocean"},
+    {"id": "route-cl-jp-01", "from": "CL", "to": "JP", "ports": ["San Antonio", "Yokohama"], "transit_days": 25, "risk_score": 0.12, "cost_index": 1.15, "mode": "ocean"},
+    {"id": "route-cd-jp-01", "from": "CD", "to": "JP", "ports": ["Matadi", "Durban", "Singapore", "Yokohama"], "transit_days": 35, "risk_score": 0.35, "cost_index": 1.45, "mode": "ocean"},
+    {"id": "route-id-jp-01", "from": "ID", "to": "JP", "ports": ["Tanjung Priok", "Yokohama"], "transit_days": 10, "risk_score": 0.1, "cost_index": 0.85, "mode": "ocean"},
+    {"id": "route-vn-jp-01", "from": "VN", "to": "JP", "ports": ["Ho Chi Minh City", "Kobe"], "transit_days": 8, "risk_score": 0.08, "cost_index": 0.78, "mode": "ocean"},
+    {"id": "route-my-jp-01", "from": "MY", "to": "JP", "ports": ["Port Klang", "Yokohama"], "transit_days": 10, "risk_score": 0.09, "cost_index": 0.82, "mode": "ocean"},
+    {"id": "route-th-jp-01", "from": "TH", "to": "JP", "ports": ["Laem Chabang", "Kobe"], "transit_days": 9, "risk_score": 0.08, "cost_index": 0.8, "mode": "ocean"},
+    {"id": "route-de-jp-01", "from": "DE", "to": "JP", "ports": ["Hamburg", "Singapore", "Yokohama"], "transit_days": 32, "risk_score": 0.15, "cost_index": 1.2, "mode": "ocean"},
+    {"id": "route-gb-jp-01", "from": "GB", "to": "JP", "ports": ["Southampton", "Singapore", "Yokohama"], "transit_days": 30, "risk_score": 0.14, "cost_index": 1.18, "mode": "ocean"},
+    {"id": "route-za-jp-01", "from": "ZA", "to": "JP", "ports": ["Durban", "Singapore", "Yokohama"], "transit_days": 25, "risk_score": 0.16, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-sa-jp-01", "from": "SA", "to": "JP", "ports": ["Jeddah", "Singapore", "Yokohama"], "transit_days": 22, "risk_score": 0.18, "cost_index": 1.1, "mode": "ocean"},
+
+    {"id": "route-au-cn-01", "from": "AU", "to": "CN", "ports": ["Melbourne", "Shanghai"], "transit_days": 12, "risk_score": 0.07, "cost_index": 0.85, "mode": "ocean"},
+    {"id": "route-au-cn-02", "from": "AU", "to": "CN", "ports": ["Fremantle", "Guangzhou"], "transit_days": 10, "risk_score": 0.06, "cost_index": 0.8, "mode": "ocean"},
+    {"id": "route-cl-cn-01", "from": "CL", "to": "CN", "ports": ["San Antonio", "Shanghai"], "transit_days": 24, "risk_score": 0.12, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-cd-cn-01", "from": "CD", "to": "CN", "ports": ["Matadi", "Durban", "Singapore", "Guangzhou"], "transit_days": 35, "risk_score": 0.38, "cost_index": 1.5, "mode": "ocean"},
+    {"id": "route-id-cn-01", "from": "ID", "to": "CN", "ports": ["Tanjung Priok", "Guangzhou"], "transit_days": 6, "risk_score": 0.08, "cost_index": 0.7, "mode": "ocean"},
+    {"id": "route-br-cn-01", "from": "BR", "to": "CN", "ports": ["Santos", "Cape Town", "Shanghai"], "transit_days": 35, "risk_score": 0.2, "cost_index": 1.3, "mode": "ocean"},
+    {"id": "route-za-cn-01", "from": "ZA", "to": "CN", "ports": ["Durban", "Singapore", "Shanghai"], "transit_days": 24, "risk_score": 0.15, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-sa-cn-01", "from": "SA", "to": "CN", "ports": ["Jeddah", "Singapore", "Shanghai"], "transit_days": 20, "risk_score": 0.16, "cost_index": 1.05, "mode": "ocean"},
+
+    {"id": "route-cn-in-01", "from": "CN", "to": "IN", "ports": ["Shanghai", "Singapore", "Mumbai JNPT"], "transit_days": 16, "risk_score": 0.14, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-cn-in-02", "from": "CN", "to": "IN", "ports": ["Guangzhou", "Chennai"], "transit_days": 12, "risk_score": 0.12, "cost_index": 0.9, "mode": "ocean"},
+    {"id": "route-vn-in-01", "from": "VN", "to": "IN", "ports": ["Ho Chi Minh City", "Chennai"], "transit_days": 10, "risk_score": 0.1, "cost_index": 0.82, "mode": "ocean"},
+    {"id": "route-my-in-01", "from": "MY", "to": "IN", "ports": ["Port Klang", "Chennai"], "transit_days": 7, "risk_score": 0.08, "cost_index": 0.75, "mode": "ocean"},
+    {"id": "route-th-in-01", "from": "TH", "to": "IN", "ports": ["Laem Chabang", "Chennai"], "transit_days": 9, "risk_score": 0.09, "cost_index": 0.78, "mode": "ocean"},
+    {"id": "route-id-in-01", "from": "ID", "to": "IN", "ports": ["Tanjung Priok", "Mumbai JNPT"], "transit_days": 12, "risk_score": 0.12, "cost_index": 0.88, "mode": "ocean"},
+    {"id": "route-sa-in-01", "from": "SA", "to": "IN", "ports": ["Jeddah", "Mumbai JNPT"], "transit_days": 6, "risk_score": 0.08, "cost_index": 0.7, "mode": "ocean"},
+    {"id": "route-de-in-01", "from": "DE", "to": "IN", "ports": ["Hamburg", "Jeddah", "Mumbai JNPT"], "transit_days": 22, "risk_score": 0.15, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-br-in-01", "from": "BR", "to": "IN", "ports": ["Santos", "Cape Town", "Mumbai JNPT"], "transit_days": 28, "risk_score": 0.18, "cost_index": 1.2, "mode": "ocean"},
+
+    {"id": "route-ph-us-01", "from": "PH", "to": "US", "ports": ["Manila", "Long Beach"], "transit_days": 18, "risk_score": 0.13, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-pl-us-01", "from": "PL", "to": "US", "ports": ["Gdansk", "New York-New Jersey"], "transit_days": 14, "risk_score": 0.08, "cost_index": 0.92, "mode": "ocean"},
+    {"id": "route-eg-us-01", "from": "EG", "to": "US", "ports": ["Port Said", "New York-New Jersey"], "transit_days": 16, "risk_score": 0.18, "cost_index": 1.05, "mode": "ocean"},
+    {"id": "route-ar-us-01", "from": "AR", "to": "US", "ports": ["Buenos Aires", "Houston"], "transit_days": 14, "risk_score": 0.1, "cost_index": 0.95, "mode": "ocean"},
+    {"id": "route-pe-us-01", "from": "PE", "to": "US", "ports": ["Callao", "Long Beach"], "transit_days": 12, "risk_score": 0.08, "cost_index": 0.88, "mode": "ocean"},
+    {"id": "route-bd-us-01", "from": "BD", "to": "US", "ports": ["Chittagong", "Singapore", "Long Beach"], "transit_days": 26, "risk_score": 0.18, "cost_index": 1.15, "mode": "ocean"},
+    {"id": "route-fi-us-01", "from": "FI", "to": "US", "ports": ["Helsinki", "Hamburg", "New York-New Jersey"], "transit_days": 16, "risk_score": 0.07, "cost_index": 0.95, "mode": "ocean"},
+    {"id": "route-no-us-01", "from": "NO", "to": "US", "ports": ["Bergen", "New York-New Jersey"], "transit_days": 12, "risk_score": 0.06, "cost_index": 0.88, "mode": "ocean"},
+    {"id": "route-ng-us-01", "from": "NG", "to": "US", "ports": ["Lagos Apapa", "Houston"], "transit_days": 18, "risk_score": 0.22, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-ph-de-01", "from": "PH", "to": "DE", "ports": ["Manila", "Singapore", "Hamburg"], "transit_days": 28, "risk_score": 0.16, "cost_index": 1.12, "mode": "ocean"},
+    {"id": "route-pl-de-01", "from": "PL", "to": "DE", "ports": ["Gdansk", "Hamburg"], "transit_days": 3, "risk_score": 0.03, "cost_index": 0.55, "mode": "ocean"},
+    {"id": "route-eg-de-01", "from": "EG", "to": "DE", "ports": ["Port Said", "Hamburg"], "transit_days": 12, "risk_score": 0.14, "cost_index": 0.9, "mode": "ocean"},
+    {"id": "route-ar-de-01", "from": "AR", "to": "DE", "ports": ["Buenos Aires", "Hamburg"], "transit_days": 20, "risk_score": 0.12, "cost_index": 1.05, "mode": "ocean"},
+    {"id": "route-pe-de-01", "from": "PE", "to": "DE", "ports": ["Callao", "Hamburg"], "transit_days": 22, "risk_score": 0.12, "cost_index": 1.08, "mode": "ocean"},
+    {"id": "route-bd-de-01", "from": "BD", "to": "DE", "ports": ["Chittagong", "Singapore", "Hamburg"], "transit_days": 28, "risk_score": 0.2, "cost_index": 1.18, "mode": "ocean"},
+    {"id": "route-fi-de-01", "from": "FI", "to": "DE", "ports": ["Helsinki", "Hamburg"], "transit_days": 4, "risk_score": 0.03, "cost_index": 0.55, "mode": "ocean"},
+    {"id": "route-no-de-01", "from": "NO", "to": "DE", "ports": ["Bergen", "Hamburg"], "transit_days": 4, "risk_score": 0.03, "cost_index": 0.55, "mode": "ocean"},
+    {"id": "route-ng-de-01", "from": "NG", "to": "DE", "ports": ["Lagos Apapa", "Hamburg"], "transit_days": 16, "risk_score": 0.2, "cost_index": 1.1, "mode": "ocean"},
+    {"id": "route-ph-jp-01", "from": "PH", "to": "JP", "ports": ["Manila", "Yokohama"], "transit_days": 6, "risk_score": 0.08, "cost_index": 0.72, "mode": "ocean"},
+    {"id": "route-eg-jp-01", "from": "EG", "to": "JP", "ports": ["Port Said", "Jeddah", "Singapore", "Yokohama"], "transit_days": 28, "risk_score": 0.22, "cost_index": 1.2, "mode": "ocean"},
+    {"id": "route-bd-jp-01", "from": "BD", "to": "JP", "ports": ["Chittagong", "Singapore", "Yokohama"], "transit_days": 18, "risk_score": 0.14, "cost_index": 1.0, "mode": "ocean"},
+    {"id": "route-cn-ph-01", "from": "CN", "to": "PH", "ports": ["Guangzhou", "Manila"], "transit_days": 4, "risk_score": 0.08, "cost_index": 0.65, "mode": "ocean"},
+    {"id": "route-cn-bd-01", "from": "CN", "to": "BD", "ports": ["Guangzhou", "Chittagong"], "transit_days": 8, "risk_score": 0.1, "cost_index": 0.75, "mode": "ocean"}
+  ],
+
+  "laws": [
+    {"jurisdiction": "CN", "name": "CN-Export-Control", "restricted_roles": ["Supplier"], "restricted_materials": ["rare-earth-ndfeb", "graphite-anode", "silicon-wafer"], "notes": "PRC Export Control Law restricts strategic minerals and semiconductor materials"},
+    {"jurisdiction": "JP", "name": "JP-Foreign-Trade-Act", "restricted_roles": ["Supplier"], "restricted_materials": ["silicon-wafer", "carbon-fiber"], "notes": "Foreign Exchange and Foreign Trade Act regulates dual-use technology exports"},
+    {"jurisdiction": "KR", "name": "KR-Strategic-Tech", "restricted_roles": ["Supplier"], "restricted_materials": ["silicon-wafer"], "notes": "Strategic Technology Protection Act controls semiconductor exports"},
+    {"jurisdiction": "DE", "name": "EU-CBAM", "restricted_roles": ["Supplier"], "restricted_materials": ["steel-hrcoil", "steel-crcoil", "aluminum-alloy"], "notes": "EU Carbon Border Adjustment Mechanism requires carbon footprint reporting"},
+    {"jurisdiction": "DE", "name": "EU-REACH", "restricted_roles": ["Supplier"], "restricted_materials": ["plastic-abs", "plastic-pp"], "notes": "EU Registration, Evaluation, Authorisation of Chemicals"},
+    {"jurisdiction": "DE", "name": "EU-Conflict-Minerals", "restricted_roles": ["Supplier"], "restricted_materials": ["cobalt-sulfate"], "notes": "EU Conflict Minerals Regulation for 3TG minerals"},
+    {"jurisdiction": "DE", "name": "EU-Battery-Reg", "restricted_roles": ["Supplier"], "restricted_materials": ["lithium-carbonate", "cobalt-sulfate", "nickel-sulfate"], "notes": "EU Battery Regulation requires supply chain due diligence"},
+    {"jurisdiction": "IN", "name": "IN-Environmental-Protection", "restricted_roles": ["Supplier"], "restricted_materials": ["titanium-alloy", "steel-hrcoil"], "notes": "Environment Protection Act mining and industrial emission standards"},
+    {"jurisdiction": "AU", "name": "AU-Critical-Minerals", "restricted_roles": ["Supplier"], "restricted_materials": ["lithium-carbonate", "copper-cathode"], "notes": "Critical Minerals Strategy regulates exports of strategic resources"},
+    {"jurisdiction": "CD", "name": "CD-Mining-Code", "restricted_roles": ["Supplier"], "restricted_materials": ["cobalt-sulfate"], "notes": "DRC Mining Code requires transparency and community benefit"},
+    {"jurisdiction": "ID", "name": "ID-Mining-Regulation", "restricted_roles": ["Supplier"], "restricted_materials": ["nickel-sulfate"], "notes": "Indonesian Mining Law regulates mineral processing and export"},
+    {"jurisdiction": "ID", "name": "ID-Deforestation-Act", "restricted_roles": ["Supplier"], "restricted_materials": ["natural-rubber"], "notes": "Regulation on prevention of deforestation from rubber plantations"},
+    {"jurisdiction": "BR", "name": "BR-Environmental-Code", "restricted_roles": ["Supplier"], "restricted_materials": ["steel-hrcoil", "cotton-raw"], "notes": "Brazilian Environmental Code for industrial emissions and land use"},
+    {"jurisdiction": "SA", "name": "SA-Petrochemical-Reg", "restricted_roles": ["Supplier"], "restricted_materials": ["plastic-abs", "plastic-pp"], "notes": "Saudi petrochemical safety and export regulations"},
+    {"jurisdiction": "ZA", "name": "ZA-Mineral-Resources-Act", "restricted_roles": ["Supplier"], "restricted_materials": ["titanium-alloy"], "notes": "Mineral and Petroleum Resources Development Act"},
+    {"jurisdiction": "TR", "name": "TR-Environmental-Law", "restricted_roles": ["Supplier"], "restricted_materials": ["steel-hrcoil", "specialty-glass"], "notes": "Turkish Environmental Law emission standards"},
+    {"jurisdiction": "GB", "name": "UK-Environmental-Act", "restricted_roles": ["Supplier"], "restricted_materials": ["carbon-fiber"], "notes": "UK Environment Act industrial emissions framework"},
+    {"jurisdiction": "CA", "name": "CA-Environmental-Protection", "restricted_roles": ["Supplier"], "restricted_materials": ["nickel-sulfate", "aluminum-alloy"], "notes": "Canadian Environmental Protection Act for mining and smelting"},
+    {"jurisdiction": "PL", "name": "EU-CBAM-Poland", "restricted_roles": ["Supplier"], "restricted_materials": ["copper-cathode", "steel-crcoil"], "notes": "EU CBAM applies to Polish copper and steel exports"},
+    {"jurisdiction": "EG", "name": "EG-Mining-Law", "restricted_roles": ["Supplier"], "restricted_materials": ["steel-hrcoil"], "notes": "Egyptian mining and industrial regulation"},
+    {"jurisdiction": "BD", "name": "BD-Labor-Compliance", "restricted_roles": ["Supplier"], "restricted_materials": ["cotton-raw"], "notes": "Bangladesh labor and factory safety compliance"},
+    {"jurisdiction": "PH", "name": "PH-Mining-Act", "restricted_roles": ["Supplier"], "restricted_materials": ["copper-cathode"], "notes": "Philippine Mining Act environmental compliance"}
+  ],
+
+  "trade_agreements": [
+    {"name": "USMCA", "countries": ["US", "MX", "CA"], "benefit": "Tariff elimination on qualifying goods between members, reduced customs processing time"},
+    {"name": "CPTPP", "countries": ["JP", "AU", "CA", "VN", "MY", "MX", "SG", "CL"], "benefit": "Comprehensive tariff reduction up to 95% of goods, streamlined customs procedures"},
+    {"name": "RCEP", "countries": ["CN", "JP", "KR", "AU", "ID", "VN", "MY", "TH", "SG"], "benefit": "Harmonized rules of origin, reduced tariffs on industrial goods across Asia-Pacific"},
+    {"name": "EU-Single-Market", "countries": ["DE", "NL", "GB"], "benefit": "Free movement of goods within EU/EEA, single customs territory, no internal tariffs"},
+    {"name": "EU-Japan-EPA", "countries": ["DE", "JP"], "benefit": "Elimination of tariffs on 97% of goods, mutual recognition of standards"},
+    {"name": "KORUS-FTA", "countries": ["KR", "US"], "benefit": "Tariff elimination on 95% of goods, expedited customs clearance"},
+    {"name": "China-ASEAN-FTA", "countries": ["CN", "VN", "MY", "TH", "ID", "SG"], "benefit": "Zero tariffs on 90% of traded goods, simplified certificates of origin"},
+    {"name": "MERCOSUR", "countries": ["BR"], "benefit": "Common external tariff, preferential trade within South American common market"},
+    {"name": "US-Australia-FTA", "countries": ["US", "AU"], "benefit": "Tariff elimination on nearly all goods, investment protections"},
+    {"name": "UK-Japan-CEPA", "countries": ["GB", "JP"], "benefit": "Maintained EU-Japan EPA benefits post-Brexit, digital trade provisions"}
+  ],
+
+  "price_indices": {
+    "steel-hrcoil": [{"date": "2025-07-01", "index": 95}, {"date": "2025-10-01", "index": 102}, {"date": "2026-01-01", "index": 98}],
+    "steel-crcoil": [{"date": "2025-07-01", "index": 97}, {"date": "2025-10-01", "index": 105}, {"date": "2026-01-01", "index": 101}],
+    "aluminum-alloy": [{"date": "2025-07-01", "index": 92}, {"date": "2025-10-01", "index": 98}, {"date": "2026-01-01", "index": 103}],
+    "copper-cathode": [{"date": "2025-07-01", "index": 110}, {"date": "2025-10-01", "index": 108}, {"date": "2026-01-01", "index": 105}],
+    "lithium-carbonate": [{"date": "2025-07-01", "index": 130}, {"date": "2025-10-01", "index": 115}, {"date": "2026-01-01", "index": 95}],
+    "cobalt-sulfate": [{"date": "2025-07-01", "index": 88}, {"date": "2025-10-01", "index": 92}, {"date": "2026-01-01", "index": 97}],
+    "nickel-sulfate": [{"date": "2025-07-01", "index": 95}, {"date": "2025-10-01", "index": 100}, {"date": "2026-01-01", "index": 104}],
+    "graphite-anode": [{"date": "2025-07-01", "index": 102}, {"date": "2025-10-01", "index": 98}, {"date": "2026-01-01", "index": 96}],
+    "silicon-wafer": [{"date": "2025-07-01", "index": 85}, {"date": "2025-10-01", "index": 90}, {"date": "2026-01-01", "index": 95}],
+    "silicon-poly": [{"date": "2025-07-01", "index": 75}, {"date": "2025-10-01", "index": 82}, {"date": "2026-01-01", "index": 88}],
+    "rare-earth-ndfeb": [{"date": "2025-07-01", "index": 120}, {"date": "2025-10-01", "index": 115}, {"date": "2026-01-01", "index": 110}],
+    "natural-rubber": [{"date": "2025-07-01", "index": 105}, {"date": "2025-10-01", "index": 108}, {"date": "2026-01-01", "index": 102}],
+    "plastic-abs": [{"date": "2025-07-01", "index": 98}, {"date": "2025-10-01", "index": 95}, {"date": "2026-01-01", "index": 100}],
+    "plastic-pp": [{"date": "2025-07-01", "index": 96}, {"date": "2025-10-01", "index": 93}, {"date": "2026-01-01", "index": 98}],
+    "specialty-glass": [{"date": "2025-07-01", "index": 100}, {"date": "2025-10-01", "index": 102}, {"date": "2026-01-01", "index": 101}],
+    "carbon-fiber": [{"date": "2025-07-01", "index": 105}, {"date": "2025-10-01", "index": 108}, {"date": "2026-01-01", "index": 110}],
+    "titanium-alloy": [{"date": "2025-07-01", "index": 112}, {"date": "2025-10-01", "index": 110}, {"date": "2026-01-01", "index": 108}],
+    "cotton-raw": [{"date": "2025-07-01", "index": 95}, {"date": "2025-10-01", "index": 100}, {"date": "2026-01-01", "index": 97}]
+  },
+
+  "risk_events": [
+    {"type": "port_closure", "location": "Shanghai", "severity": "high", "description": "Health emergency lockdown restrictions on port operations"},
+    {"type": "port_closure", "location": "Long Beach", "severity": "medium", "description": "ILWU labor action causing partial port shutdown"},
+    {"type": "port_closure", "location": "Jeddah", "severity": "high", "description": "Red Sea security threat from Houthi missile attacks on commercial vessels"},
+    {"type": "port_congestion", "location": "Rotterdam", "severity": "medium", "description": "Post-holiday volume surge causing 3-5 day berthing delays"},
+    {"type": "port_congestion", "location": "Singapore", "severity": "low", "description": "Monsoon season causing minor vessel diversions"},
+    {"type": "port_closure", "location": "Istanbul Ambarli", "severity": "medium", "description": "Bosphorus strait closure due to vessel grounding"},
+    {"type": "port_congestion", "location": "Busan", "severity": "low", "description": "Typhoon season diversions causing terminal backlog"},
+    {"type": "route_risk", "location": "South China Sea", "severity": "medium", "description": "Geopolitical tensions increasing insurance premiums and rerouting"},
+    {"type": "port_closure", "location": "Durban", "severity": "medium", "description": "Infrastructure failure at container terminal"},
+    {"type": "route_risk", "location": "Suez Canal", "severity": "high", "description": "Canal congestion risk from vessel queue exceeding 72 hours"}
+  ],
+
+  "multi_tier_relationships": [
+    {"tier1": "sup-cn-01", "tier2": "sup-au-03", "material": "iron-ore", "relationship": "raw-material-supply"},
+    {"tier1": "sup-cn-04", "tier2": "sup-cn-05", "material": "rare-earth-oxide", "relationship": "processing-input"},
+    {"tier1": "sup-jp-02", "tier2": "sup-cn-01", "material": "PAN-precursor", "relationship": "feedstock"},
+    {"tier1": "sup-kr-03", "tier2": "sup-au-01", "material": "spodumene-concentrate", "relationship": "raw-material-supply"},
+    {"tier1": "sup-cn-08", "tier2": "sup-cl-02", "material": "lithium-brine", "relationship": "raw-material-supply"},
+    {"tier1": "sup-id-01", "tier2": "sup-au-03", "material": "nickel-ore", "relationship": "laterite-processing"}
+  ],
+
+  "lead_time_variability": {
+    "steel-hrcoil": {"baseline_days": 30, "variance_days": 6},
+    "steel-crcoil": {"baseline_days": 35, "variance_days": 7},
+    "aluminum-alloy": {"baseline_days": 25, "variance_days": 5},
+    "copper-cathode": {"baseline_days": 20, "variance_days": 4},
+    "lithium-carbonate": {"baseline_days": 40, "variance_days": 10},
+    "cobalt-sulfate": {"baseline_days": 45, "variance_days": 12},
+    "nickel-sulfate": {"baseline_days": 35, "variance_days": 8},
+    "graphite-anode": {"baseline_days": 30, "variance_days": 6},
+    "silicon-wafer": {"baseline_days": 60, "variance_days": 15},
+    "silicon-poly": {"baseline_days": 45, "variance_days": 10},
+    "rare-earth-ndfeb": {"baseline_days": 50, "variance_days": 12},
+    "natural-rubber": {"baseline_days": 20, "variance_days": 5},
+    "plastic-abs": {"baseline_days": 15, "variance_days": 3},
+    "plastic-pp": {"baseline_days": 15, "variance_days": 3},
+    "specialty-glass": {"baseline_days": 30, "variance_days": 7},
+    "carbon-fiber": {"baseline_days": 45, "variance_days": 10},
+    "titanium-alloy": {"baseline_days": 50, "variance_days": 12},
+    "cotton-raw": {"baseline_days": 15, "variance_days": 4}
+  }
+}
