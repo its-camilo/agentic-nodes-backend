@@ -442,7 +442,13 @@ async def health() -> Dict[str, Any]:
 
 @app.api_route("/head", methods=["HEAD", "GET"])
 async def head() -> Response:
-    return Response(status_code=200)
+    # Minimal body for GET (avoids white screen); HEAD gets same status/headers, no body
+    return Response(
+        content="OK",
+        status_code=200,
+        media_type="text/plain",
+        headers={"Cache-Control": "no-store"},
+    )
 
 
 @app.get("/schemas")
