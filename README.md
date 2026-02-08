@@ -80,13 +80,18 @@ For uptime monitoring (e.g. UptimeRobot), use the **root URL** with GET or HEAD;
 
 After deploy, the root `https://your-project.vercel.app/` will respond 200 to GET/HEAD so monitors report success. CORS is configured (in both `vercel.json` and FastAPI) so the GitHub Pages frontend at `https://its-camilo.github.io` can call `/events` and `/process-intent`.
 
-**Deployment Protection (Vercel Authentication, etc.):** Browsers send CORS preflight (OPTIONS) requests without cookies, so Vercel can block them with 401/403 and the frontend will see *"Response to preflight request doesn't pass access control check: It does not have HTTP ok status"*. Fix it by:
+**Deployment Protection (Vercel Authentication, etc.):** Browsers send CORS preflight (OPTIONS) requests **without cookies**, so Vercel can block them with 401/403. The frontend then shows: *"Response to preflight request doesn't pass access control check: It does not have HTTP ok status"*.
 
-1. In the project: **Settings → Deployment Protection → OPTIONS Allowlist**.
-2. Add the path **`/`** (one entry, slash only) so that **all** OPTIONS requests bypass protection.
-3. Ensure the allowlist applies to **Production** (not only Preview), then save and redeploy if needed.
+**Option A — Keep Vercel Authentication, allow preflight:**  
+1. Vercel dashboard → your project → **Settings** → **Deployment Protection**.  
+2. Find **OPTIONS Allowlist**.  
+3. **Turn the toggle ON** (from "Disabled" to "Enabled"). If the toggle stays off, no paths are exempt.  
+4. Click **Add path** and enter exactly: **`/`** (a single slash). That exempts all OPTIONS requests.  
+5. Click **Save**.  
+No redeploy needed; the change applies to the next request.
 
-Without this, OPTIONS never reach the app and the preflight fails with a non-2xx status.
+**Option B — Simplest if this API is only for your public frontend:**  
+Turn **Vercel Authentication** off for this project (Settings → Deployment Protection → disable "Vercel Authentication"). The frontend on GitHub Pages cannot send Vercel auth cookies to a different origin anyway, so the API is already effectively public from the browser; disabling protection removes the preflight 401.
 
 ## License
 
