@@ -436,6 +436,17 @@ def seed_registry(world: Dict[str, Any], registry: AgentRegistry) -> None:
 
 
 # ---------------------------------------------------------------------------
+# CORS preflight: explicit OPTIONS so preflight always gets 200 when it reaches the app.
+# (If you still see "does not have HTTP ok status", OPTIONS is blocked by Vercel — add "/" to OPTIONS Allowlist for Production.)
+# ---------------------------------------------------------------------------
+@app.options("/events")
+@app.options("/process-intent")
+@app.options("/process-intent/{path:path}")
+async def cors_preflight() -> Response:
+    return Response(status_code=200)
+
+
+# ---------------------------------------------------------------------------
 # Endpoints
 # ---------------------------------------------------------------------------
 
