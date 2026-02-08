@@ -673,6 +673,22 @@ async def process_intent(req: IntentRequest) -> IntentResponse:
     agentic_process = _build_agentic_process_from_routes(buyer_location, validated_suppliers, routes)
     graph = build_dependency_graph(demand, validated_suppliers, routes, agentic_process)
 
+    # Enrich routes with display fields so frontend can show risk_pct and ports without digging into route
+    routes_for_report: List[Dict[str, Any]] = []
+    for r in routes:
+        ri = r.get("route")
+        entry = dict(r)
+        if ri:
+            entry["risk_pct"] = round((float(ri.get("risk_score") or 0) or 0) * 100)
+            entry["ports"] = list(ri.get("ports") or [])
+            entry["transit_days"] = ri.get("transit_days", 0)
+        else:
+            entry["risk_pct"] = 0
+            entry["ports"] = []
+            entry["transit_days"] = 0
+        entry["supplier_name"] = supplier_by_id.get(entry.get("supplier_id", ""), entry.get("supplier_id", ""))
+        routes_for_report.append(entry)
+
     all_msgs = [demand_msg.model_dump(), supplier_msg.model_dump(), route_msg.model_dump(), negotiation_msg.model_dump(), execution_msg.model_dump()]
     report = {
         "trace_id": trace_id, "intent": req.intent, "timestamp": time.time(),
@@ -680,7 +696,7 @@ async def process_intent(req: IntentRequest) -> IntentResponse:
         "disruptions": disruptions, "discovery_paths": discovery_paths,
         "trust_logic": trust_logic, "agentic_process": agentic_process,
         "world_context": world_context, "messages": all_msgs,
-        "negotiation": negotiation, "execution_plan": execution_plan, "routes": routes,
+        "negotiation": negotiation, "execution_plan": execution_plan, "routes": routes_for_report,
     }
 
     sim_state = {
@@ -727,13 +743,31 @@ async def apply_instructions(trace_id: str, req: InstructionRequest) -> Dict[str
     graph = build_dependency_graph(sim["demand"], sim["validated_suppliers"], sim["routes"], sim["agentic_process"])
     await event_bus.publish({"type": "instruction_update", "trace_id": trace_id, "payload": {"messages": [], "graph": graph, "progress_messages": progress_messages, "agentic_process": sim["agentic_process"], "routes": sim["routes"], "execution_plan": sim["execution_plan"]}})
 
+    # Enrich routes with display fields (same as process_intent)
+    world = getattr(app.state, "world", {}) or {}
+    supplier_by_id_inst = {s["id"]: s.get("name", s["id"]) for s in world.get("suppliers", [])}
+    routes_for_report_inst: List[Dict[str, Any]] = []
+    for r in sim["routes"]:
+        ri = r.get("route")
+        entry = dict(r)
+        if ri:
+            entry["risk_pct"] = round((float(ri.get("risk_score") or 0) or 0) * 100)
+            entry["ports"] = list(ri.get("ports") or [])
+            entry["transit_days"] = ri.get("transit_days", 0)
+        else:
+            entry["risk_pct"] = 0
+            entry["ports"] = []
+            entry["transit_days"] = 0
+        entry["supplier_name"] = supplier_by_id_inst.get(entry.get("supplier_id", ""), entry.get("supplier_id", ""))
+        routes_for_report_inst.append(entry)
+
     report = {
         "trace_id": trace_id, "intent": sim["intent"], "timestamp": time.time(),
         "buyer_location": sim.get("buyer_location"), "manufacturer": sim["manufacturer"],
         "disruptions": sim["disruptions"], "discovery_paths": sim["discovery_paths"],
         "trust_logic": sim["trust_logic"], "agentic_process": sim["agentic_process"],
         "world_context": sim.get("world_context", {}),
-        "negotiation": sim["negotiation"], "execution_plan": sim["execution_plan"], "routes": sim["routes"],
+        "negotiation": sim["negotiation"], "execution_plan": sim["execution_plan"], "routes": routes_for_report_inst,
     }
     report["map_data"] = _build_map_data(report, sim)
     summary = await generate_summary_ai(llm, report)
