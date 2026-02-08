@@ -78,7 +78,7 @@ For uptime monitoring (e.g. UptimeRobot), use the **root URL** with GET or HEAD;
 2. Set environment variables in the Vercel project (same as `.env`). You do **not** need to set `ALLOWED_ORIGINS` if your frontend is at `https://its-camilo.github.io` (it is included by default).
 3. Ensure the project uses the correct build command and output for a Python/FastAPI app (e.g. Vercel’s Python runtime or a serverless function that runs `main:app`).
 
-After deploy, the root `https://your-project.vercel.app/` will respond 200 to GET/HEAD so monitors report success. CORS is configured so the GitHub Pages frontend can call `/events` and `/process-intent`.
+After deploy, the root `https://your-project.vercel.app/` will respond 200 to GET/HEAD so monitors report success. CORS is configured (in both `vercel.json` and FastAPI) so the GitHub Pages frontend at `https://its-camilo.github.io` can call `/events` and `/process-intent`. If you use **Deployment Protection** (Vercel Auth, Password, etc.), add an **OPTIONS Allowlist** for `/` (or the paths you use) so preflight requests are not blocked.
 
 ## License
 

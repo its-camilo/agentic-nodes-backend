@@ -1,0 +1,14 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://its-camilo.github.io" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD" },
+        { "key": "Access-Control-Allow-Headers", "value": "*" },
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Max-Age", "value": "86400" }
+      ]
+    }
+  ]
+}
