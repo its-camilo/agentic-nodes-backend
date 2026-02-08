@@ -424,6 +424,17 @@ def seed_registry(world: Dict[str, Any], registry: AgentRegistry) -> None:
 # Endpoints
 # ---------------------------------------------------------------------------
 
+@app.api_route("/", methods=["HEAD", "GET"])
+async def root() -> Response:
+    """Root path for uptime monitors (HEAD/GET). Returns 200 so checks pass."""
+    return Response(
+        content="OK",
+        status_code=200,
+        media_type="text/plain",
+        headers={"Cache-Control": "no-store"},
+    )
+
+
 @app.get("/health")
 async def health() -> Dict[str, Any]:
     llm: LLMClient = app.state.llm
