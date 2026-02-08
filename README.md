@@ -53,7 +53,7 @@ uvicorn main:app --reload --port 8000
 | `OPENAI_MODEL` | e.g. `gpt-4o-mini`. |
 | `OPENROUTER_API_KEY` | Required if `LLM_PROVIDER=openrouter`. |
 | `OPENROUTER_MODEL` | e.g. `openai/gpt-4o-mini`. |
-| `ALLOWED_ORIGINS` | Comma-separated CORS origins; `*` for all. |
+| `ALLOWED_ORIGINS` | Comma-separated CORS origins (defaults include `https://its-camilo.github.io` and localhost). |
 
 ## API overview
 
@@ -75,10 +75,10 @@ For uptime monitoring (e.g. UptimeRobot), use the **root URL** with GET or HEAD;
 ## Deploy (Vercel)
 
 1. Connect the repo to Vercel.
-2. Set environment variables in the Vercel project (same as `.env`).
+2. Set environment variables in the Vercel project (same as `.env`). You do **not** need to set `ALLOWED_ORIGINS` if your frontend is at `https://its-camilo.github.io` (it is included by default).
 3. Ensure the project uses the correct build command and output for a Python/FastAPI app (e.g. Vercel’s Python runtime or a serverless function that runs `main:app`).
 
-After deploy, the root `https://your-project.vercel.app/` will respond 200 to GET/HEAD so monitors report success.
+After deploy, the root `https://your-project.vercel.app/` will respond 200 to GET/HEAD so monitors report success. CORS is configured so the GitHub Pages frontend can call `/events` and `/process-intent`.
 
 ## License
 

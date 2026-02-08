@@ -374,14 +374,29 @@ async def lifespan(application: FastAPI) -> AsyncIterator[None]:
 
 app = FastAPI(title="Supply Chain AI Agents", lifespan=lifespan)
 
-_raw_origins = os.getenv("ALLOWED_ORIGINS", "*")
-_allowed_origins = [o.strip() for o in _raw_origins.split(",") if o.strip()]
+# CORS: with allow_credentials=True, browser forbids "*"; use explicit origins.
+_DEFAULT_ORIGINS = [
+    "https://its-camilo.github.io",
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:3000",
+]
+_raw_origins = os.getenv("ALLOWED_ORIGINS", "").strip()
+if _raw_origins and _raw_origins != "*":
+    _allowed_origins = [o.strip() for o in _raw_origins.split(",") if o.strip()]
+else:
+    _allowed_origins = _DEFAULT_ORIGINS
+if not _allowed_origins:
+    _allowed_origins = _DEFAULT_ORIGINS
+logger.info("[CORS] allow_origins=%s", _allowed_origins)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 
