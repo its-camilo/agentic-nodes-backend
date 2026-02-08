@@ -390,6 +390,41 @@ else:
 if not _allowed_origins:
     _allowed_origins = _DEFAULT_ORIGINS
 logger.info("[CORS] allow_origins=%s", _allowed_origins)
+
+# Normalize origins for comparison (no trailing slash); accept both forms.
+_allowed_origins_normalized = {o.rstrip("/") for o in _allowed_origins}
+
+
+class _OptionsCorsMiddleware:
+    """Respond 200 to OPTIONS with CORS headers before CORSMiddleware can return 400 (e.g. origin with trailing slash)."""
+
+    def __init__(self, app: Any) -> None:
+        self.app = app
+
+    async def __call__(self, scope: Any, receive: Any, send: Any) -> None:
+        if scope.get("type") != "http" or scope.get("method") != "OPTIONS":
+            await self.app(scope, receive, send)
+            return
+        origin_raw = None
+        for k, v in scope.get("headers", []):
+            if k.lower() == b"origin":
+                origin_raw = v.decode("utf-8", errors="replace").strip()
+                break
+        origin_ok = origin_raw and (origin_raw.rstrip("/") in _allowed_origins_normalized)
+        headers: List[tuple] = [
+            (b"access-control-allow-methods", b"GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"),
+            (b"access-control-allow-headers", b"*"),
+            (b"access-control-allow-credentials", b"true"),
+            (b"access-control-max-age", b"86400"),
+        ]
+        if origin_ok and origin_raw:
+            headers.insert(0, (b"access-control-allow-origin", origin_raw.encode()))
+        elif _allowed_origins:
+            headers.insert(0, (b"access-control-allow-origin", _allowed_origins[0].encode()))
+        await send({"type": "http.response.start", "status": 200, "headers": headers})
+        await send({"type": "http.response.body", "body": b""})
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins,
@@ -398,6 +433,7 @@ app.add_middleware(
     allow_headers=["*"],
     expose_headers=["*"],
 )
+app.add_middleware(_OptionsCorsMiddleware)
 
 
 def seed_registry(world: Dict[str, Any], registry: AgentRegistry) -> None:
