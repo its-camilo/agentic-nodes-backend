@@ -95,7 +95,7 @@ async def generate_world_with_ai(llm: Any, prompt: Optional[str] = None) -> Dict
 
 
 async def load_world(llm: Optional[Any] = None) -> Dict[str, Any]:
-    """Load the simulation world. Priority: world_data.json > AI generation > minimal."""
+    """Load the simulation world. Requires world_data.json or an enabled LLM for AI generation."""
     # 1. Try static file first (fast, no LLM needed)
     file_world = _load_world_from_file()
     if file_world:
@@ -105,15 +105,17 @@ async def load_world(llm: Optional[Any] = None) -> Dict[str, Any]:
         _ensure_price_indices_and_variability(file_world)
         return file_world
 
-    # 2. Fall back to AI generation
+    # 2. Fall back to AI generation only if LLM is enabled
     from agents import LLMClient
     if llm is not None and isinstance(llm, LLMClient) and llm.enabled:
         logger.info("[World] No world_data.json found, generating via AI...")
         return await generate_world_with_ai(llm)
 
-    # 3. No file, no LLM → minimal world
-    logger.warning("[World] No world_data.json and no LLM available, using minimal world")
-    return get_minimal_world()
+    # 3. No file and no LLM → error (no minimal world fallback)
+    raise ValueError(
+        "World could not be loaded: world_data.json is missing and no enabled LLM is available. "
+        "Add world_data.json to the project or set OPENAI_API_KEY / OPENROUTER_API_KEY for AI world generation."
+    )
 
 
 def lookup_buyer_coordinates(world: Dict[str, Any], buyer_location: str) -> Dict[str, Any]:

@@ -1071,6 +1071,36 @@
       "capabilities": ["flat-products", "rebar", "wire-rod"],
       "policies": {"sustainability": "low", "min_order": 200},
       "tier": "T2", "lat": 30.0444, "lng": 31.2357, "endpoint": ""
+    },
+    {
+      "id": "sup-ar-02", "name": "Ternium Argentina", "country": "AR", "jurisdiction": "AR",
+      "materials": ["steel-hrcoil", "steel-crcoil"],
+      "base_price": 680, "markup": 1.08, "currency": "USD", "lead_time_days": 28,
+      "certifications": ["ISO9001", "IATF16949"],
+      "compliance": [],
+      "capabilities": ["automotive-grade", "flat-products", "coated"],
+      "policies": {"sustainability": "medium", "min_order": 50},
+      "tier": "T1", "lat": -34.6037, "lng": -58.3816, "endpoint": ""
+    },
+    {
+      "id": "sup-nl-01", "name": "DSM Engineering Materials", "country": "NL", "jurisdiction": "NL",
+      "materials": ["plastic-abs", "plastic-pp", "carbon-fiber"],
+      "base_price": 2200, "markup": 1.12, "currency": "USD", "lead_time_days": 18,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": ["EU-CBAM", "EU-REACH"],
+      "capabilities": ["engineering-plastics", "compounds", "recycled-content"],
+      "policies": {"sustainability": "high", "min_order": 10},
+      "tier": "T1", "lat": 51.9236, "lng": 4.4667, "endpoint": ""
+    },
+    {
+      "id": "sup-ae-02", "name": "Emirates Global Aluminum", "country": "AE", "jurisdiction": "AE",
+      "materials": ["aluminum-alloy"],
+      "base_price": 2700, "markup": 1.07, "currency": "USD", "lead_time_days": 22,
+      "certifications": ["ISO9001", "ISO14001"],
+      "compliance": [],
+      "capabilities": ["primary-aluminum", "extrusion-billets", "rolling-slabs"],
+      "policies": {"sustainability": "medium", "min_order": 30},
+      "tier": "T1", "lat": 24.4539, "lng": 54.3773, "endpoint": ""
     }
   ],
 
@@ -1258,7 +1288,16 @@
     {"id": "route-eg-jp-01", "from": "EG", "to": "JP", "ports": ["Port Said", "Jeddah", "Singapore", "Yokohama"], "transit_days": 28, "risk_score": 0.22, "cost_index": 1.2, "mode": "ocean"},
     {"id": "route-bd-jp-01", "from": "BD", "to": "JP", "ports": ["Chittagong", "Singapore", "Yokohama"], "transit_days": 18, "risk_score": 0.14, "cost_index": 1.0, "mode": "ocean"},
     {"id": "route-cn-ph-01", "from": "CN", "to": "PH", "ports": ["Guangzhou", "Manila"], "transit_days": 4, "risk_score": 0.08, "cost_index": 0.65, "mode": "ocean"},
-    {"id": "route-cn-bd-01", "from": "CN", "to": "BD", "ports": ["Guangzhou", "Chittagong"], "transit_days": 8, "risk_score": 0.1, "cost_index": 0.75, "mode": "ocean"}
+    {"id": "route-cn-bd-01", "from": "CN", "to": "BD", "ports": ["Guangzhou", "Chittagong"], "transit_days": 8, "risk_score": 0.1, "cost_index": 0.75, "mode": "ocean"},
+
+    {"id": "route-nl-us-01", "from": "NL", "to": "US", "ports": ["Rotterdam", "New York-New Jersey"], "transit_days": 11, "risk_score": 0.06, "cost_index": 0.88, "mode": "ocean"},
+    {"id": "route-ae-us-01", "from": "AE", "to": "US", "ports": ["Jebel Ali", "Houston"], "transit_days": 20, "risk_score": 0.14, "cost_index": 1.05, "mode": "ocean"},
+    {"id": "route-ar-us-02", "from": "AR", "to": "US", "ports": ["Buenos Aires", "Savannah"], "transit_days": 18, "risk_score": 0.11, "cost_index": 0.98, "mode": "ocean"},
+    {"id": "route-ca-us-03", "from": "CA", "to": "US", "ports": ["Vancouver", "Long Beach"], "transit_days": 6, "risk_score": 0.05, "cost_index": 0.72, "mode": "ocean"},
+    {"id": "route-no-us-02", "from": "NO", "to": "US", "ports": ["Bergen", "Houston"], "transit_days": 14, "risk_score": 0.07, "cost_index": 0.9, "mode": "ocean"},
+    {"id": "route-nl-de-01", "from": "NL", "to": "DE", "ports": ["Rotterdam", "Hamburg"], "transit_days": 2, "risk_score": 0.02, "cost_index": 0.5, "mode": "ocean"},
+    {"id": "route-ae-de-01", "from": "AE", "to": "DE", "ports": ["Jebel Ali", "Hamburg"], "transit_days": 16, "risk_score": 0.12, "cost_index": 0.98, "mode": "ocean"},
+    {"id": "route-ar-de-02", "from": "AR", "to": "DE", "ports": ["Buenos Aires", "Rotterdam", "Hamburg"], "transit_days": 24, "risk_score": 0.14, "cost_index": 1.08, "mode": "ocean"}
   ],
 
   "laws": [

@@ -320,7 +320,9 @@ def _build_map_data(report: Dict[str, Any], sim: Dict[str, Any]) -> Dict[str, An
         if rpa:
             route_agents["port_agents"] = rpa
 
-        risk_val = ri.get("risk_score", 0.2)
+        risk_val = float(ri.get("risk_score", 0) or 0)
+        risk_pct = round(risk_val * 100)
+        ports_list = ri.get("ports", []) or [wp.get("name") for wp in waypoints if wp.get("name")]
         polyline: List[List[float]] = [[from_coords[1], from_coords[0]]]
         for wp in waypoints:
             polyline.append(wp["coordinates"])
@@ -333,7 +335,8 @@ def _build_map_data(report: Dict[str, Any], sim: Dict[str, Any]) -> Dict[str, An
             "from_coords": {"lat": from_coords[0], "lng": from_coords[1], "coordinates": [from_coords[1], from_coords[0]]},
             "to_coords": {"lat": buyer_pin["lat"], "lng": buyer_pin["lng"], "coordinates": [buyer_pin["lng"], buyer_pin["lat"]]},
             "waypoints": waypoints, "polyline": polyline,
-            "transit_days": ri.get("transit_days", 0), "risk_score": risk_val,
+            "ports": ports_list,
+            "transit_days": ri.get("transit_days", 0), "risk_score": risk_val, "risk_pct": risk_pct,
             "risk_level": "low" if risk_val < 0.15 else ("medium" if risk_val < 0.3 else "high"),
             "status": r.get("status", "planned"), "agents": route_agents,
         })
@@ -634,6 +637,9 @@ async def process_intent(req: IntentRequest) -> IntentResponse:
     # --- Phase 4: AI negotiates ---
     await _emit_phase(trace_id, "negotiating", "AI agents negotiating autonomously with suppliers...")
     negotiation = await negotiation_agent.negotiate(demand, validated_suppliers, req.constraints)
+    supplier_by_id = {s["id"]: s.get("name", s["id"]) for s in world.get("suppliers", [])}
+    for t in negotiation.get("terms", []):
+        t["supplier_name"] = supplier_by_id.get(t.get("supplier_id"), t.get("supplier_id", ""))
     negotiation_msg = build_mcp_message("negotiation", negotiation_agent.identity, execution_planner.identity, negotiation, trace={"trace_id": trace_id})
 
     # --- Phase 5: Local execution plan ---

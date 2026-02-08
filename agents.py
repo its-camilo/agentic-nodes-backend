@@ -320,21 +320,19 @@ class ProcurementAgent:
         self.identity = "procurement-agent"
 
     async def demand_signal(self, intent: str) -> DemandSignal:
+        if not self.llm or not self.llm.enabled:
+            raise ValueError("Demand parsing requires an enabled LLM")
         products = self.world.get("products", [])
         product = _match_product(intent, products) if products else {"name": "custom", "bom": []}
-        llm_data = None
-        if self.llm.enabled:
-            system = "Parse procurement intent→product+BOM. JSON:{intent,product,materials:[{material,qty}]}"
-            # Only send product names + matched BOM (not full product list) to save tokens
-            prod_names = [p["name"] for p in products] if products else []
-            matched_bom = json.dumps(product.get("bom", []), separators=(",", ":"))
-            prompt = f"Intent:{intent}\nProducts:{','.join(prod_names)}\nMatched:{product.get('name','custom')}\nBOM:{matched_bom}"
-            llm_data = await self.llm.reason_json(system, prompt, max_tokens=800)
-        if llm_data and "materials" in llm_data:
-            materials = llm_data["materials"]
-            product = {"name": llm_data.get("product", product.get("name", "custom")), "bom": materials}
-        else:
-            materials = product.get("bom", [])
+        system = "Parse procurement intent→product+BOM. JSON:{intent,product,materials:[{material,qty}]}"
+        prod_names = [p["name"] for p in products] if products else []
+        matched_bom = json.dumps(product.get("bom", []), separators=(",", ":"))
+        prompt = f"Intent:{intent}\nProducts:{','.join(prod_names)}\nMatched:{product.get('name','custom')}\nBOM:{matched_bom}"
+        llm_data = await self.llm.reason_json(system, prompt, max_tokens=800)
+        if not llm_data or "materials" not in llm_data or not isinstance(llm_data.get("materials"), list):
+            raise ValueError("LLM did not return valid demand materials")
+        materials = llm_data["materials"]
+        product = {"name": llm_data.get("product", product.get("name", "custom")), "bom": materials}
         return DemandSignal(intent=intent, product=product, materials=materials)
 
 
@@ -468,15 +466,41 @@ class ExecutionPlanner:
         self.world = world; self.identity = "execution-planner"
 
     def create_execution_plan(self, demand: DemandSignal, routes: List[Dict[str, Any]], negotiation: Dict[str, Any]) -> Dict[str, Any]:
+        supplier_by_id = {s["id"]: s.get("name", s["id"]) for s in self.world.get("suppliers", [])}
         steps, total_days, risk = [], 0.0, 0.0
         for r in routes:
+            sid = r.get("supplier_id", "")
+            supplier_name = supplier_by_id.get(sid, sid)
+            mat = r.get("material", "")
             if r["route"] is None:
-                steps.append({"material": r["material"], "supplier_id": r["supplier_id"], "action": "escalate_no_route"})
+                steps.append({
+                    "material": mat, "supplier_id": sid, "supplier_name": supplier_name,
+                    "action": "escalate_no_route",
+                    "description": f"Escalate: no route for {mat} from {supplier_name}",
+                })
             else:
-                ri = r["route"]; t = ri.get("transit_days", 0); total_days = max(total_days, t); risk += ri.get("risk_score", 0.0)
-                steps.append({"material": r["material"], "supplier_id": r["supplier_id"], "action": "ship", "route_id": ri.get("id", f"route-{r['supplier_id']}-{r['material']}"), "transit_days": t})
+                ri = r["route"]
+                t = ri.get("transit_days", 0)
+                total_days = max(total_days, t)
+                risk += ri.get("risk_score", 0.0)
+                ports = ri.get("ports", [])
+                ports_str = " → ".join(ports) if ports else "—"
+                steps.append({
+                    "material": mat, "supplier_id": sid, "supplier_name": supplier_name,
+                    "action": "ship",
+                    "route_id": ri.get("id", f"route-{sid}-{mat}"),
+                    "transit_days": t,
+                    "description": f"Ship {mat} from {supplier_name} via {ports_str} ({t}d)",
+                })
         risk = min(1.0, risk / max(len(routes), 1))
-        steps.append({"action": "finalize_contracts", "terms_count": len(negotiation.get("terms", [])), "total_cost_estimate": negotiation.get("total_cost_estimate")})
+        terms_count = len(negotiation.get("terms", []))
+        total_cost = negotiation.get("total_cost_estimate")
+        steps.append({
+            "action": "finalize_contracts",
+            "terms_count": terms_count,
+            "total_cost_estimate": total_cost,
+            "description": f"Finalize contracts: {terms_count} terms, total ${total_cost:,.2f}" if total_cost is not None else f"Finalize contracts: {terms_count} terms",
+        })
         return {"steps": steps, "timeline_days": total_days, "risk_score": round(risk, 2)}
 
 
@@ -629,12 +653,16 @@ async def generate_summary_ai(llm: LLMClient, report: Dict[str, Any]) -> str:
     prompt = "\n".join(parts)
     summary_instruction = (
         "Context: This simulation uses LOCAL world data, AI-powered route selection, and AI negotiation agents. "
-        "Write a detailed English summary of the results. Include: "
-        "(1) overview and buyer/manufacturer; (2) suppliers and trust; (3) shipping routes (chosen by AI); "
-        "(4) negotiation terms and total cost (outcome of AI negotiation agents); "
-        "(5) a dedicated paragraph 'Negotiation benefits' explaining what cost or time advantages were achieved thanks to the AI negotiation "
-        "(e.g. volume discounts, reduced lead times, better unit prices); (6) execution timeline and risk. "
-        "The full summary, including negotiation benefits, must be generated by you (AI). Respond with JSON only: {\"summary\": \"...your full text...\"}"
+        "Write a detailed English summary of the results. You MUST include specific figures and percentages throughout. "
+        "Include: "
+        "(1) overview and buyer/manufacturer; "
+        "(2) suppliers and trust (cite trust scores or counts where relevant); "
+        "(3) shipping routes (chosen by AI) with concrete numbers: transit days, risk as a percentage, and port names; "
+        "(4) negotiation terms and total cost with explicit amounts: per-material unit prices, subtotals, and total in currency; "
+        "(5) a dedicated paragraph 'Negotiation benefits' with explicit numbers and percentages: e.g. 'X% volume discount', '$Y saved vs list', 'Z% lower risk', 'N days lead time reduction'; "
+        "(6) execution timeline (in days) and risk as a percentage. "
+        "The full summary, including negotiation benefits, must be generated by you (AI). Use real numbers from the data; do not use placeholders. "
+        "Respond with JSON only: {\"summary\": \"...your full text...\"}"
     )
     data = await llm.reason_json(summary_instruction, prompt, max_tokens=1200)
     if not data:
